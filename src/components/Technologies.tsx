@@ -60,7 +60,7 @@ function MobileVersion() {
 
 function DesktopVersion() {
   return (
-    <div className="hidden md:block bg-[#1e1e1f] w-full relative h-[570px] overflow-hidden">
+    <div className="hidden md:block bg-[#1e1e1f] w-full relative h-[570px]">
       <HowDoWeDoIt1 />
     </div>
   );

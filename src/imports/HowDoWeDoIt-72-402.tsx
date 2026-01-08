@@ -1,18 +1,43 @@
+"use client";
+
 import svgPaths from "./svg-6ss0qc76a";
+import { motion } from "framer-motion";
 
 function Frame5() {
   return (
-    <div className="bg-white box-border content-stretch flex gap-[10px] h-[80px] items-center justify-center px-[49px] py-[22px] relative rounded-[5px] shadow-[0px_50px_80px_0px_#000000] shrink-0 w-[226px]">
+    <motion.div
+      initial={{ y: -600, rotate: -180, opacity: 0 }}
+      whileInView={{ y: 0, rotate: 0, opacity: 1 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ 
+        type: "spring",
+        damping: 15,
+        stiffness: 100,
+        delay: 0.2
+      }}
+      className="bg-white box-border content-stretch flex gap-[10px] h-[80px] items-center justify-center px-[49px] py-[22px] relative rounded-[5px] shadow-[0px_50px_80px_0px_#000000] shrink-0 w-[226px]"
+    >
       <p className="font-['Courier_Prime:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#1e1e1f] text-[30px] text-center text-nowrap whitespace-pre">JAVA</p>
-    </div>
+    </motion.div>
   );
 }
 
 function Frame6() {
   return (
-    <div className="bg-[#1e1e1f] box-border content-stretch flex gap-[10px] h-[80px] items-center justify-center px-[41px] py-[22px] relative rounded-[5px] shrink-0 w-[226px]">
+    <motion.div
+      initial={{ y: -600, rotate: 180, opacity: 0 }}
+      whileInView={{ y: 0, rotate: 0, opacity: 1 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ 
+        type: "spring",
+        damping: 15,
+        stiffness: 100,
+        delay: 0.8
+      }}
+      className="bg-[#1e1e1f] box-border content-stretch flex gap-[10px] h-[80px] items-center justify-center px-[41px] py-[22px] relative rounded-[5px] shrink-0 w-[226px]"
+    >
       <p className="font-['Courier_Prime:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[30px] text-center text-nowrap text-white whitespace-pre">REACT</p>
-    </div>
+    </motion.div>
   );
 }
 
@@ -27,17 +52,39 @@ function Frame13() {
 
 function Frame10() {
   return (
-    <div className="bg-[#1e1e1f] box-border content-stretch flex gap-[10px] h-[80px] items-center justify-center px-[27px] py-[22px] relative rounded-[5px] shrink-0 w-[226px]">
+    <motion.div
+      initial={{ y: -600, rotate: -90, opacity: 0 }}
+      whileInView={{ y: 0, rotate: 0, opacity: 1 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ 
+        type: "spring",
+        damping: 15,
+        stiffness: 100,
+        delay: 0.3
+      }}
+      className="bg-[#1e1e1f] box-border content-stretch flex gap-[10px] h-[80px] items-center justify-center px-[27px] py-[22px] relative rounded-[5px] shrink-0 w-[226px]"
+    >
       <p className="font-['Courier_Prime:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[30px] text-center text-nowrap text-white whitespace-pre">KOTLIN</p>
-    </div>
+    </motion.div>
   );
 }
 
 function Frame7() {
   return (
-    <div className="bg-white box-border content-stretch flex gap-[10px] h-[80px] items-center justify-center px-[21px] py-[22px] relative rounded-[5px] shrink-0 w-[226px]">
+    <motion.div
+      initial={{ y: -600, rotate: 90, opacity: 0 }}
+      whileInView={{ y: 0, rotate: 0, opacity: 1 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ 
+        type: "spring",
+        damping: 15,
+        stiffness: 100,
+        delay: 0.6
+      }}
+      className="bg-white box-border content-stretch flex gap-[10px] h-[80px] items-center justify-center px-[21px] py-[22px] relative rounded-[5px] shrink-0 w-[226px]"
+    >
       <p className="font-['Courier_Prime:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#1e1e1f] text-[30px] text-center text-nowrap whitespace-pre">LARAVEL</p>
-    </div>
+    </motion.div>
   );
 }
 
@@ -52,17 +99,39 @@ function Frame14() {
 
 function Frame12() {
   return (
-    <div className="bg-[#00da6b] box-border content-stretch flex gap-[10px] h-[80px] items-center justify-center px-[34px] py-[23px] relative rounded-[5px] shadow-[0px_50px_80px_0px_#000000] shrink-0 w-[226px]">
+    <motion.div
+      initial={{ y: -600, rotate: -270, opacity: 0 }}
+      whileInView={{ y: 0, rotate: 0, opacity: 1 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ 
+        type: "spring",
+        damping: 15,
+        stiffness: 100,
+        delay: 0.4
+      }}
+      className="bg-[#00da6b] box-border content-stretch flex gap-[10px] h-[80px] items-center justify-center px-[34px] py-[23px] relative rounded-[5px] shadow-[0px_50px_80px_0px_#000000] shrink-0 w-[226px]"
+    >
       <p className="font-['Courier_Prime:Bold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[30px] text-center text-nowrap text-white whitespace-pre">AWS GIT</p>
-    </div>
+    </motion.div>
   );
 }
 
 function Frame8() {
   return (
-    <div className="bg-[#1e1e1f] box-border content-stretch flex gap-[10px] h-[80px] items-center justify-center px-[37px] py-[19px] relative rounded-[5px] shrink-0 w-[226px]">
+    <motion.div
+      initial={{ y: -600, rotate: 180, opacity: 0 }}
+      whileInView={{ y: 0, rotate: 0, opacity: 1 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ 
+        type: "spring",
+        damping: 15,
+        stiffness: 100,
+        delay: 0.9
+      }}
+      className="bg-[#1e1e1f] box-border content-stretch flex gap-[10px] h-[80px] items-center justify-center px-[37px] py-[19px] relative rounded-[5px] shrink-0 w-[226px]"
+    >
       <p className="font-['Courier_Prime:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[30px] text-center text-nowrap text-white whitespace-pre">WP</p>
-    </div>
+    </motion.div>
   );
 }
 
@@ -77,9 +146,20 @@ function Frame15() {
 
 function Frame11() {
   return (
-    <div className="bg-[#1e1e1f] box-border content-stretch flex gap-[10px] h-[80px] items-center justify-center px-[12px] py-[22px] relative rounded-[5px] shrink-0 w-[226px]">
+    <motion.div
+      initial={{ y: -600, rotate: -360, opacity: 0 }}
+      whileInView={{ y: 0, rotate: 0, opacity: 1 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ 
+        type: "spring",
+        damping: 15,
+        stiffness: 100,
+        delay: 0.5
+      }}
+      className="bg-[#1e1e1f] box-border content-stretch flex gap-[10px] h-[80px] items-center justify-center px-[12px] py-[22px] relative rounded-[5px] shrink-0 w-[226px]"
+    >
       <p className="font-['Courier_Prime:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[30px] text-center text-nowrap text-white whitespace-pre">JS</p>
-    </div>
+    </motion.div>
   );
 }
 
@@ -110,9 +190,20 @@ function Frame18() {
 
 function Frame9() {
   return (
-    <div className="bg-white box-border content-stretch flex gap-[10px] h-[80px] items-center justify-center px-[99px] py-[22px] relative rounded-[5px] shrink-0 w-[487px]">
+    <motion.div
+      initial={{ y: -600, rotate: 270, opacity: 0 }}
+      whileInView={{ y: 0, rotate: 0, opacity: 1 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ 
+        type: "spring",
+        damping: 15,
+        stiffness: 100,
+        delay: 1.0
+      }}
+      className="bg-white box-border content-stretch flex gap-[10px] h-[80px] items-center justify-center px-[99px] py-[22px] relative rounded-[5px] shrink-0 w-[487px]"
+    >
       <p className="font-['Courier_Prime:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#1e1e1f] text-[30px] text-center text-nowrap whitespace-pre">PHP</p>
-    </div>
+    </motion.div>
   );
 }
 
