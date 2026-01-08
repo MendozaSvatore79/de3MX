@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useCallback } from 'react';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import Web from '../imports/Web';
 import App from '../imports/App-44-1040';
@@ -81,12 +82,26 @@ export default function Services() {
       <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-[24px] md:py-[36px] lg:py-[48px] relative z-10">
         {/* Title */}
         <div className="text-center mb-12 md:mb-16 lg:mb-20">
-          <h2 className="text-white mb-0" style={{ fontSize: 'clamp(40px, 6vw, 65px)', fontWeight: 'bold', lineHeight: '1.2' }}>
+          <motion.h2 
+            className="text-white mb-0" 
+            style={{ fontSize: 'clamp(40px, 6vw, 65px)', fontWeight: 'bold', lineHeight: '1.2' }}
+            initial={{ opacity: 0, y: 60, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+          >
             You dream it,
-          </h2>
-          <h2 className="text-white" style={{ fontSize: 'clamp(40px, 6vw, 65px)', fontWeight: 'bold', lineHeight: '1.2' }}>
+          </motion.h2>
+          <motion.h2 
+            className="text-white" 
+            style={{ fontSize: 'clamp(40px, 6vw, 65px)', fontWeight: 'bold', lineHeight: '1.2' }}
+            initial={{ opacity: 0, y: 60, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1], delay: 0.2 }}
+          >
             we make it digital
-          </h2>
+          </motion.h2>
         </div>
 
         {/* Services Grid */}

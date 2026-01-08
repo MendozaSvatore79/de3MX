@@ -1,10 +1,19 @@
+'use client';
+
 import React from 'react';
+import { motion } from 'framer-motion';
 import svgPaths from "../imports/svg-exyzcmg3ay";
 
 function Copy() {
   return (
     <div className="box-border content-stretch flex gap-[10px] items-center justify-center p-[10px] relative shrink-0 w-full lg:w-auto" data-name="Copy">
-      <div className="font-['Inter:Bold',sans-serif] font-bold not-italic relative shrink-0 text-[#2b2b2c] w-full text-center lg:text-left lg:text-nowrap lg:whitespace-pre">
+      <motion.div 
+        className="font-['Inter:Bold',sans-serif] font-bold not-italic relative shrink-0 text-[#2b2b2c] w-full text-center lg:text-left lg:text-nowrap lg:whitespace-pre"
+        initial={{ opacity: 0, y: 60, scale: 0.95 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+      >
         <p className="mb-0" style={{ fontSize: 'clamp(37px, 6vw, 62px)', lineHeight: 'clamp(47px, 7vw, 80px)', fontWeight: 'bold' }}>
           <span className="text-[#00da6b]">We are an</span>{" "}
         </p>
@@ -15,7 +24,7 @@ function Copy() {
           <span className="text-[#00da6b]">digital</span>
         </p>
         <p className="text-[#00da6b] mb-0" style={{ fontSize: 'clamp(37px, 6vw, 62px)', lineHeight: 'clamp(47px, 7vw, 80px)', fontWeight: 'bold' }}>agency.</p>
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -1,4 +1,7 @@
+"use client";
+
 import svgPaths from "./svg-1ehv621gs1";
+import { motion } from "framer-motion";
 
 function Copy() {
   return (
@@ -21,24 +24,74 @@ function Group() {
       <div className="absolute bottom-[-15.71%] left-[-9.42%] right-[-33.81%] top-0">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 738 430">
           <g id="Group 6975">
-            <g filter="url(#filter0_d_18_560)" id="Union">
+            <motion.g
+              filter="url(#filter0_d_18_560)"
+              id="Union"
+              animate={{
+                y: [0, -15, 0],
+                rotate: [0, 5, 0]
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            >
               <path clipRule="evenodd" d={svgPaths.p3ab06480} fill="white" fillRule="evenodd" />
-            </g>
-            <g filter="url(#filter1_d_18_560)" id="Union_2">
+            </motion.g>
+            <motion.g
+              filter="url(#filter1_d_18_560)"
+              id="Union_2"
+              animate={{
+                y: [0, -20, 0],
+                rotate: [0, -3, 0]
+              }}
+              transition={{
+                duration: 3.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 0.5
+              }}
+            >
               <path clipRule="evenodd" d={svgPaths.p205f8c00} fill="white" fillRule="evenodd" />
-            </g>
-            <g filter="url(#filter2_d_18_560)" id="Union_3">
+            </motion.g>
+            <motion.g
+              filter="url(#filter2_d_18_560)"
+              id="Union_3"
+              animate={{
+                y: [0, -10, 0],
+                rotate: [0, 4, 0]
+              }}
+              transition={{
+                duration: 2.8,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 1
+              }}
+            >
               <path clipRule="evenodd" d={svgPaths.p21b6c080} fill="white" fillRule="evenodd" />
-            </g>
+            </motion.g>
             <g id="Group">
               <path d={svgPaths.p25708f00} fill="var(--fill-0, #2B2B2C)" id="Vector" />
               <path d={svgPaths.p19641980} fill="var(--fill-0, #00DA6B)" id="Vector_2" />
             </g>
-            <g id="Group_2">
+            <motion.g
+              id="Group_2"
+              animate={{
+                scaleX: [1, 1.05, 1],
+                skewY: [0, 2, 0, -2, 0]
+              }}
+              transition={{
+                duration: 2.5,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              style={{ transformOrigin: "left center" }}
+            >
               <path d={svgPaths.p21ea3b00} fill="var(--fill-0, #00DA6B)" id="Vector_3" stroke="var(--stroke-0, #2B2B2C)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" />
               <path d={svgPaths.p12b25d00} id="Vector_4" stroke="var(--stroke-0, #2B2B2C)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" />
               <path d={svgPaths.p314d7f00} id="Vector_5" stroke="var(--stroke-0, #2B2B2C)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" />
-            </g>
+            </motion.g>
             <g id="Group_3">
               <path d={svgPaths.p36831580} fill="var(--fill-0, #00DA6B)" id="Vector_6" stroke="var(--stroke-0, #2B2B2C)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" />
               <path d={svgPaths.p1ab69b00} id="Vector_7" stroke="var(--stroke-0, #2B2B2C)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" />

@@ -144,7 +144,7 @@ export default function Header() {
           isScrolled ? 'bg-[#1E1E1F]/90' : 'bg-transparent'
         }`}
       >
-        <div className="absolute box-border content-stretch flex items-center justify-between left-1/2 px-[20px] md:px-[80px] py-[16px] top-0 translate-x-[-50%] w-full max-w-[1440px] mx-auto relative">
+        <div className="absolute box-border content-stretch flex items-center justify-between left-0 pl-[5px] pr-[10px] md:pl-[10px] md:pr-[20px] py-[16px] top-0 w-full max-w-[1440px] mx-auto relative">
           <LogoDe3 />
           
           {/* Desktop Navigation */}
