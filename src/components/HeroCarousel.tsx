@@ -117,7 +117,7 @@ function Slide4Digital({ isActive }: { isActive: boolean }) {
 // Componentes decorativos compartidos
 function MaskResplandor() {
   return (
-    <div className="absolute h-[850px] left-0 top-0 w-full" data-name="Mask resplandor">
+    <div className="absolute inset-0 w-full h-full" data-name="Mask resplandor">
       <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1440 850">
         <g id="Mask resplandor">
           <mask height="850" id="mask0_carousel" maskUnits="userSpaceOnUse" style={{ maskType: "alpha" }} width="1440" x="0" y="0">
@@ -293,10 +293,10 @@ export default function HeroCarousel() {
   return (
     <section 
       ref={sectionRef}
-      className="bg-[#1e1e1f] relative h-[600px] sm:h-[700px] md:h-[750px] lg:h-[850px] w-full flex items-center justify-center overflow-hidden" 
+      className="bg-[#1e1e1f] relative h-[600px] sm:h-[700px] md:h-[750px] lg:h-[850px] xl:h-screen w-full flex items-center justify-center overflow-hidden" 
       data-name="Sección Hero Carousel"
     >
-      <div className="relative w-full max-w-[1440px] h-[600px] sm:h-[700px] md:h-[750px] lg:h-[850px]">
+      <div className="relative w-full max-w-[1440px] h-[600px] sm:h-[700px] md:h-[750px] lg:h-[850px] xl:h-screen">
         {/* Background gradient */}
         <MaskResplandor />
 
@@ -311,9 +311,9 @@ export default function HeroCarousel() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
-                className="absolute inset-0"
+                className="absolute inset-0 flex items-center justify-center 2xl:translate-y-[6vh]"
               >
-                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[240px] sm:w-[280px] md:w-[320px] lg:w-[386.354px]">
+                <div className="w-[240px] sm:w-[280px] md:w-[320px] lg:w-[386.354px]">
                   <LogoIng isActive={currentSlide === 0} />
                 </div>
               </motion.div>
@@ -327,7 +327,7 @@ export default function HeroCarousel() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
-                className="absolute inset-0"
+                className="absolute inset-0 flex items-center justify-center 2xl:translate-y-[6vh]"
               >
                 <Slide2Design isActive={currentSlide === 1} />
               </motion.div>
@@ -341,7 +341,7 @@ export default function HeroCarousel() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
-                className="absolute inset-0"
+                className="absolute inset-0 flex items-center justify-center 2xl:translate-y-[6vh]"
               >
                 <Slide3Development isActive={currentSlide === 2} />
               </motion.div>
@@ -355,7 +355,7 @@ export default function HeroCarousel() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
-                className="absolute inset-0"
+                className="absolute inset-0 flex items-center justify-center 2xl:translate-y-[6vh]"
               >
                 <Slide4Digital isActive={currentSlide === 3} />
               </motion.div>
@@ -373,6 +373,11 @@ export default function HeroCarousel() {
           <Indicadores currentSlide={currentSlide} onClick={handleSlideChange} />
         </div>
       </div>
+      {/* Bottom cover to hide initial white gap below hero on large screens */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-0 left-0 w-full h-[120px] bg-[#1e1e1f]"
+      />
     </section>
   );
 }
