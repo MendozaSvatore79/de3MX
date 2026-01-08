@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 @custom-variant dark (&:is(.dark *));
 
 :root {
@@ -215,16 +213,4 @@
 
 html {
   font-size: var(--font-size);
-}
-
-/* Custom Cursor */
-*,
-*::before,
-*::after {
-  cursor: none !important;
-}
-
-body,
-html {
-  cursor: none !important;
 }
