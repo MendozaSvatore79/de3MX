@@ -1,8 +1,13 @@
+'use client';
+
 import React from 'react';
 import svgPaths from '../imports/svg-67kdc95b1x';
 import { imgEllipse1 } from '../imports/svg-4xce6';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Footer() {
+  const { t } = useLanguage();
+  
   return (
     <section className="relative bg-[#1E1E1F] text-white overflow-hidden">
       {/* Background gradient */}
@@ -374,7 +379,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-60 w-full">
             {/* Wanna work together button */}
             <button className="box-border flex items-center justify-center px-[20px] md:px-[25px] py-[14px] md:py-[16px] rounded-[125px] border border-white hover:bg-white hover:text-[#1E1E1F] transition-colors">
-              <p className="font-bold text-[16px] md:text-[20px] text-white whitespace-nowrap">Wanna work together?</p>
+              <p className="font-bold text-[16px] md:text-[20px] text-white whitespace-nowrap">{t('footer.wannaWork')}</p>
             </button>
 
             {/* Logo */}
@@ -447,19 +452,19 @@ export default function Footer() {
           {/* Bottom Legal Links */}
           <div className="flex flex-wrap items-center justify-center gap-[20px] md:gap-[35px]">
             <p className="font-light text-[#D9D9D9] text-[12px] md:text-[14px] tracking-[1.4px] uppercase whitespace-nowrap">
-              PRIVACY POLICY
+              {t('footer.privacyPolicy')}
             </p>
             <div className="bg-[#D9D9D9] h-[20px] w-px hidden md:block" />
             <p className="font-light text-[#D9D9D9] text-[12px] md:text-[14px] tracking-[1.4px] uppercase whitespace-nowrap">
-              TERMS OF USE
+              {t('footer.termsOfUse')}
             </p>
             <div className="bg-[#D9D9D9] h-[20px] w-px hidden md:block" />
             <p className="font-light text-[#D9D9D9] text-[12px] md:text-[14px] tracking-[1.4px] uppercase whitespace-nowrap">
-              LEGAL
+              {t('footer.legal')}
             </p>
             <div className="bg-[#D9D9D9] h-[20px] w-px hidden md:block" />
             <p className="font-light text-[#D9D9D9] text-[12px] md:text-[14px] tracking-[1.4px] uppercase whitespace-nowrap">
-              SITE MAP
+              {t('footer.siteMap')}
             </p>
           </div>
         </div>

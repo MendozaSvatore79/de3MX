@@ -1,12 +1,17 @@
+'use client';
+
 import svgPaths from "./svg-5p71v9o6t0";
+import { useLanguage } from '../context/LanguageContext';
 // Placeholder images - replace with actual assets from Figma
 const imgHelvetiaTravel16221 = "/img/helvetia.png";
 const imgDownload1 = "/img/sanfer.png";
 
 function Titulo() {
+  const { t } = useLanguage();
+  
   return (
-    <div className="box-border content-stretch flex gap-[10px] items-center justify-center px-0 py-[10px] relative shrink-0" data-name="Titulo">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-black text-nowrap whitespace-pre" style={{ fontSize: 'clamp(37px, 6vw, 62px)' }}>Our clients</p>
+    <div className="box-border content-stretch flex gap-[10px] items-center justify-center px-0 py-[10px] relative shrink-0 w-full" data-name="Titulo">
+      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic text-black text-center w-full" style={{ fontSize: 'clamp(37px, 6vw, 62px)' }}>{t('clients.title')}</p>
     </div>
   );
 }

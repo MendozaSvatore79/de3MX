@@ -8,11 +8,13 @@ import Web from '../imports/Web';
 import App from '../imports/App-44-1040';
 import Design from '../imports/Design';
 import Marketing from '../imports/Marketing';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Services() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const serviceRefs = useRef<(HTMLDivElement | null)[]>([]);
   const rafIds = useRef<number[]>([]);
+  const { t } = useLanguage();
 
   const services = [
     {
@@ -90,7 +92,7 @@ export default function Services() {
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
           >
-            You dream it,
+            {t('services.title1')}
           </motion.h2>
           <motion.h2 
             className="text-white" 
@@ -100,7 +102,7 @@ export default function Services() {
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1], delay: 0.2 }}
           >
-            we make it digital
+            {t('services.title2')}
           </motion.h2>
         </div>
 

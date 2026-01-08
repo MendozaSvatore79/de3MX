@@ -1,0 +1,136 @@
+{
+  "header": {
+    "portfolio": "Portfolio",
+    "workTogether": "Wanna work together?",
+    "menu": "Menu"
+  },
+  "hero": {
+    "slide1": {
+      "tagline": "Digital agency"
+    },
+    "slide2": {
+      "title": "Design"
+    },
+    "slide3": {
+      "title": "Development"
+    },
+    "slide4": {
+      "title": "Digital"
+    }
+  },
+  "services": {
+    "title1": "You dream it,",
+    "title2": "we build it",
+    "web": "Web",
+    "app": "App",
+    "design": "Design",
+    "marketing": "Marketing"
+  },
+  "mission": {
+    "title": "Our mission",
+    "subtitle": "Bring your brand to life",
+    "description": "At De3, we transform ideas into exceptional digital experiences. We combine creativity, technology, and strategy to help brands stand out in the digital world.",
+    "weAre": "We are an",
+    "enthusiastic": "enthusiastic,",
+    "experienced": "experienced, and",
+    "creative": "creative",
+    "digital": "digital",
+    "agency": "agency.",
+    "ourMission": "Our mission",
+    "isTo": "is to",
+    "makeYourBrand": "make your brand",
+    "grow": "grow.",
+    "values": {
+      "innovation": {
+        "title": "Innovation",
+        "description": "We stay at the forefront of technology and design trends"
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "Every project is crafted with excellence and attention to detail"
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "We work hand in hand with our clients to achieve their goals"
+      }
+    }
+  },
+  "technologies": {
+    "title": "How do we do it?",
+    "subtitle": "We use cutting-edge technologies",
+    "description": "Our team masters the most modern and efficient tools in the industry to deliver high-quality solutions."
+  },
+  "clients": {
+    "title": "Our clients"
+  },
+  "reviews": {
+    "title": "Reviews matter",
+    "loading": "Loading reviews...",
+    "noReviews": "No reviews available",
+    "usingMockData": "Using sample data (Strapi not connected)",
+    "checkConsole": "Check browser console for more details",
+    "dataError": "Data structure error",
+    "previous": "Previous review",
+    "next": "Next review",
+    "viewReview": "View review"
+  },
+  "contact": {
+    "title": "Wanna work together?",
+    "subtitle": "Contact us",
+    "description": "We'd love to hear about your project and how we can help bring it to life.",
+    "bottomText": "Let's talk about your project...",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
+      "comments": "Comments",
+      "servicesNeeded": "Services you need",
+      "budget": "Budget",
+      "namePlaceholder": "Pedro Leyva",
+      "emailPlaceholder": "pedro@mail.com",
+      "phonePlaceholder": "+01 55 0000 0000",
+      "companyPlaceholder": "Website or company name",
+      "commentsPlaceholder": "Pitch your project idea",
+      "selectServices": "Select services",
+      "selectBudget": "Select budget",
+      "services": {
+        "web": "Web Development",
+        "app": "App Development",
+        "design": "Design",
+        "marketing": "Marketing"
+      },
+      "budgetRanges": {
+        "5k-10k": "$5k - $10k",
+        "10k-25k": "$10k - $25k",
+        "25k-50k": "$25k - $50k",
+        "50k+": "$50k+"
+      },
+      "submit": "Submit",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending message"
+    }
+  },
+  "footer": {
+    "services": "Services",
+    "web": "Web Development",
+    "apps": "Mobile Apps",
+    "design": "Design",
+    "marketing": "Marketing",
+    "company": "Company",
+    "about": "About",
+    "team": "Team",
+    "careers": "Careers",
+    "contact": "Contact",
+    "social": "Follow us",
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "wannaWork": "Wanna work together?",
+    "privacyPolicy": "PRIVACY POLICY",
+    "termsOfUse": "TERMS OF USE",
+    "legal": "LEGAL",
+    "siteMap": "SITE MAP"
+  }
+}

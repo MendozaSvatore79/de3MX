@@ -1,0 +1,136 @@
+{
+  "header": {
+    "portfolio": "Portafolio",
+    "workTogether": "¿Quieres trabajar juntos?",
+    "menu": "Menú"
+  },
+  "hero": {
+    "slide1": {
+      "tagline": "Agencia digital"
+    },
+    "slide2": {
+      "title": "Diseño"
+    },
+    "slide3": {
+      "title": "Desarrollo"
+    },
+    "slide4": {
+      "title": "Digital"
+    }
+  },
+  "services": {
+    "title1": "Tú lo sueñas,",
+    "title2": "nosotros lo construimos",
+    "web": "Web",
+    "app": "App",
+    "design": "Diseño",
+    "marketing": "Marketing"
+  },
+  "mission": {
+    "title": "Nuestra misión",
+    "subtitle": "Dale vida a tu marca",
+    "description": "En De3, transformamos ideas en experiencias digitales excepcionales. Combinamos creatividad, tecnología y estrategia para ayudar a las marcas a destacar en el mundo digital.",
+    "weAre": "Somos una agencia",
+    "enthusiastic": "digital entusiasta,",
+    "experienced": "experimentada",
+    "creative": "y creativa.",
+    "digital": "",
+    "agency": "",
+    "ourMission": "Nuestra misión",
+    "isTo": "es hacer",
+    "makeYourBrand": "crecer",
+    "grow": "tu marca.",
+    "values": {
+      "innovation": {
+        "title": "Innovación",
+        "description": "Nos mantenemos a la vanguardia de la tecnología y tendencias de diseño"
+      },
+      "quality": {
+        "title": "Calidad",
+        "description": "Cada proyecto se elabora con excelencia y atención al detalle"
+      },
+      "collaboration": {
+        "title": "Colaboración",
+        "description": "Trabajamos de la mano con nuestros clientes para alcanzar sus objetivos"
+      }
+    }
+  },
+  "technologies": {
+    "title": "¿Cómo lo hacemos?",
+    "subtitle": "Usamos tecnologías de vanguardia",
+    "description": "Nuestro equipo domina las herramientas más modernas y eficientes de la industria para entregar soluciones de alta calidad."
+  },
+  "clients": {
+    "title": "Nuestros clientes"
+  },
+  "reviews": {
+    "title": "Las reseñas importan",
+    "loading": "Cargando reseñas...",
+    "noReviews": "No hay reseñas disponibles",
+    "usingMockData": "Usando datos de ejemplo (Strapi no conectado)",
+    "checkConsole": "Revisa la consola del navegador para más detalles",
+    "dataError": "Error en estructura de datos",
+    "previous": "Reseña anterior",
+    "next": "Reseña siguiente",
+    "viewReview": "Ver reseña"
+  },
+  "contact": {
+    "title": "¿Quieres trabajar juntos?",
+    "subtitle": "Contáctanos",
+    "description": "Nos encantaría conocer tu proyecto y cómo podemos ayudarte a hacerlo realidad.",
+    "bottomText": "Hablemos sobre tu proyecto...",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "company": "Empresa",
+      "comments": "Comentarios",
+      "servicesNeeded": "Servicios que necesitas",
+      "budget": "Presupuesto",
+      "namePlaceholder": "Pedro Leyva",
+      "emailPlaceholder": "pedro@mail.com",
+      "phonePlaceholder": "+01 55 0000 0000",
+      "companyPlaceholder": "Sitio web o nombre de la empresa",
+      "commentsPlaceholder": "Cuéntanos sobre tu proyecto",
+      "selectServices": "Seleccionar servicios",
+      "selectBudget": "Seleccionar presupuesto",
+      "services": {
+        "web": "Desarrollo Web",
+        "app": "Desarrollo de Apps",
+        "design": "Diseño",
+        "marketing": "Marketing"
+      },
+      "budgetRanges": {
+        "5k-10k": "$5k - $10k",
+        "10k-25k": "$10k - $25k",
+        "25k-50k": "$25k - $50k",
+        "50k+": "$50k+"
+      },
+      "submit": "Enviar",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado con éxito!",
+      "error": "Error al enviar mensaje"
+    }
+  },
+  "footer": {
+    "services": "Servicios",
+    "web": "Desarrollo Web",
+    "apps": "Apps Móviles",
+    "design": "Diseño",
+    "marketing": "Marketing",
+    "company": "Empresa",
+    "about": "Acerca de",
+    "team": "Equipo",
+    "careers": "Carreras",
+    "contact": "Contacto",
+    "social": "Síguenos",
+    "rights": "Todos los derechos reservados",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "wannaWork": "¿Quieres trabajar juntos?",
+    "privacyPolicy": "POLÍTICA DE PRIVACIDAD",
+    "termsOfUse": "TÉRMINOS DE USO",
+    "legal": "LEGAL",
+    "siteMap": "MAPA DEL SITIO"
+  }
+}

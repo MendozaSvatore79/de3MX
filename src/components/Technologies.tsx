@@ -1,6 +1,9 @@
+'use client';
+
 import React from 'react';
 import HowDoWeDoIt1 from '../imports/HowDoWeDoIt-72-402';
 import svgPaths from "../imports/svg-6ss0qc76a";
+import { useLanguage } from '../context/LanguageContext';
 
 // Mobile Version - Simple badges
 function TechBadgeMobile({ text, variant = 'white' }: { text: string; variant?: 'white' | 'dark' | 'green' }) {
@@ -19,12 +22,14 @@ function TechBadgeMobile({ text, variant = 'white' }: { text: string; variant?: 
 }
 
 function MobileVersion() {
+  const { t } = useLanguage();
+  
   return (
     <div className="block md:hidden bg-[#1e1e1f] w-full py-12 px-4">
       {/* Title */}
       <div className="text-center mb-8">
         <h2 className="text-white" style={{ fontSize: '42px', fontWeight: 'bold', lineHeight: 'normal' }}>
-          How do we do it?
+          {t('technologies.title')}
         </h2>
       </div>
 

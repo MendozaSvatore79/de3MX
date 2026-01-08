@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Star } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 interface Review {
   id: number;
@@ -23,6 +24,7 @@ export default function Reviews() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const { t } = useLanguage();
 
   const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL || 'https://prueba-sitede3mx.synovasystems.com';
   const STRAPI_TOKEN = process.env.NEXT_PUBLIC_STRAPI_TOKEN;
@@ -122,7 +124,7 @@ export default function Reviews() {
     return (
       <section className="relative bg-[#F8F8F8]">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-[24px] md:py-[36px] lg:py-[48px]">
-          <div className="flex items-center justify-center h-[400px]">
+          <div className="flex items-cent{t('reviews.loading')}-[400px]">
             <p className="text-gray-500">Cargando reviews...</p>
           </div>
         </div>
@@ -136,11 +138,11 @@ export default function Reviews() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-[24px] md:py-[36px] lg:py-[48px]">
           <div className="flex flex-col items-center justify-center h-[400px] gap-4">
             <p className="text-gray-500 text-lg">
-              {error ? 'Usando datos de ejemplo (Strapi no conectado)' : 'No hay reviews disponibles'}
+              {error ? t('reviews.usingMockData') : t('reviews.noReviews')}
             </p>
             {error && (
               <p className="text-gray-400 text-sm">
-                Revisa la consola del navegador para más detalles
+                {t('reviews.checkConsole')}
               </p>
             )}
           </div>
@@ -158,7 +160,7 @@ export default function Reviews() {
       <section className="relative bg-[#F8F8F8]">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-[24px] md:py-[36px] lg:py-[48px]">
           <div className="flex items-center justify-center h-[400px]">
-            <p className="text-gray-500">Error en estructura de datos</p>
+            <p className="text-gray-500">{t('reviews.dataError')}</p>
           </div>
         </div>
       </section>
@@ -176,7 +178,7 @@ export default function Reviews() {
           {/* Left Side - Title with speech bubble */}
           <div className="flex gap-4 md:gap-6 items-center shrink-0">
             <h2 className="text-black" style={{ fontSize: 'clamp(40px, 6vw, 65px)', fontWeight: 'bold', lineHeight: 'normal', maxWidth: '340px' }}>
-              Reviews matter
+              {t('reviews.title')}
             </h2>
             
             {/* Speech bubble with stars */}
@@ -252,7 +254,7 @@ export default function Reviews() {
                   className={`w-[15px] h-[15px] rounded-full transition-colors ${
                     index === currentIndex ? 'bg-[#1E1E1F]' : 'bg-[#CBCBCB] hover:bg-[#A0A0A0]'
                   }`}
-                  aria-label={`Ver review ${index + 1}`}
+                  aria-label={`${t('reviews.viewReview')} ${index + 1}`}
                 ></button>
               ))}
             </div>
@@ -262,7 +264,7 @@ export default function Reviews() {
             <button 
               onClick={handlePrevious}
               className="hidden lg:block absolute left-0 top-[375px] w-[78.571px] h-[36.667px] hover:opacity-80 transition-opacity"
-              aria-label="Review anterior"
+              aria-label={t('reviews.previous')}
             >
               <svg width="79" height="37" viewBox="0 0 79 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 {/* Arrow shaft */}
@@ -282,7 +284,7 @@ export default function Reviews() {
             <button 
               onClick={handleNext}
               className="hidden lg:block absolute right-0 top-[375px] w-[78.571px] h-[36.667px] hover:opacity-80 transition-opacity"
-              aria-label="Review siguiente"
+              aria-label={t('reviews.next')}
             >
               <svg width="79" height="37" viewBox="0 0 79 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 {/* Arrow shaft */}

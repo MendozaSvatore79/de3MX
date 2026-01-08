@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import svgPaths from '../imports/svg-vb64srnkaa';
 import menuSvgPaths from '../imports/svg-k5krc1s3s1';
+import { useLanguage } from '../context/LanguageContext';
 
 function LogoGroup() {
   return (
@@ -28,10 +29,10 @@ function LogoDe3() {
 }
 
 function LanguageButton() {
-  const [language, setLanguage] = useState('Ing');
+  const { language, setLanguage } = useLanguage();
   
   const toggleLanguage = () => {
-    setLanguage(language === 'Esp' ? 'Ing' : 'Esp');
+    setLanguage(language === 'es' ? 'en' : 'es');
   };
   
   return (
@@ -42,7 +43,7 @@ function LanguageButton() {
         <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
       </svg>
       <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[14px] text-center text-nowrap">
-        {language === 'Esp' ? (
+        {language === 'es' ? (
           <>
             <span className="text-white">ESP</span>
             <span className="text-white/40 mx-[4px]">/</span>
@@ -61,19 +62,23 @@ function LanguageButton() {
 }
 
 function PortfolioButton() {
+  const { t } = useLanguage();
+  
   return (
     <button className="box-border content-stretch flex gap-[10px] h-[40px] items-center justify-center px-[30px] py-0 relative rounded-[125px] shrink-0 hover:bg-[#00DA6B] hover:text-white transition-colors" data-name="Contacto">
       <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[125px]" />
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[14px] text-center text-nowrap whitespace-pre">Portafolio</p>
+      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[14px] text-center text-nowrap whitespace-pre">{t('header.portfolio')}</p>
     </button>
   );
 }
 
 function WorkTogetherButton() {
+  const { t } = useLanguage();
+  
   return (
     <button className="box-border content-stretch flex gap-[10px] h-[40px] items-center justify-center px-[30px] py-0 relative rounded-[125px] shrink-0 hover:bg-[#00DA6B] hover:text-white transition-colors" data-name="Contacto">
       <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[125px]" />
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[14px] text-center text-nowrap whitespace-pre">Wanna work together?</p>
+      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[14px] text-center text-nowrap whitespace-pre">{t('header.workTogether')}</p>
     </button>
   );
 }

@@ -3,8 +3,11 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import svgPaths from "../imports/svg-1ehv621gs1";
+import { useLanguage } from '../context/LanguageContext';
 
 function Copy() {
+  const { t, language } = useLanguage();
+  
   return (
     <div className="box-border content-stretch flex gap-[10px] items-center justify-center p-[10px] relative shrink-0 w-full lg:w-auto" data-name="Copy">
       <motion.div 
@@ -14,12 +17,29 @@ function Copy() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
       >
-        <p className="mb-0" style={{ fontSize: 'clamp(37px, 6vw, 62px)', lineHeight: 'clamp(47px, 7vw, 80px)', fontWeight: 'bold' }}>
-          <span className="text-[#00da6b]">Our mission</span>
-          <span>{` is to `}</span>
-        </p>
-        <p className="mb-0" style={{ fontSize: 'clamp(37px, 6vw, 62px)', lineHeight: 'clamp(47px, 7vw, 80px)', fontWeight: 'bold' }}>make your brand</p>
-        <p className="mb-0" style={{ fontSize: 'clamp(37px, 6vw, 62px)', lineHeight: 'clamp(47px, 7vw, 80px)', fontWeight: 'bold' }}>grow.</p>
+        {language === 'en' ? (
+          <>
+            <p className="mb-0" style={{ fontSize: 'clamp(37px, 6vw, 62px)', lineHeight: 'clamp(47px, 7vw, 80px)', fontWeight: 'bold' }}>
+              <span className="text-[#00da6b]">{t('mission.ourMission')}</span>
+              <span>{` ${t('mission.isTo')} `}</span>
+            </p>
+            <p className="mb-0" style={{ fontSize: 'clamp(37px, 6vw, 62px)', lineHeight: 'clamp(47px, 7vw, 80px)', fontWeight: 'bold' }}>{t('mission.makeYourBrand')}</p>
+            <p className="mb-0" style={{ fontSize: 'clamp(37px, 6vw, 62px)', lineHeight: 'clamp(47px, 7vw, 80px)', fontWeight: 'bold' }}>{t('mission.grow')}</p>
+          </>
+        ) : (
+          <>
+            <p className="mb-0" style={{ fontSize: 'clamp(37px, 6vw, 62px)', lineHeight: 'clamp(47px, 7vw, 80px)', fontWeight: 'bold' }}>
+              <span className="text-[#00da6b]">{t('mission.ourMission')}</span>
+              <span>{` ${t('mission.isTo')} `}</span>
+            </p>
+            <p className="mb-0" style={{ fontSize: 'clamp(37px, 6vw, 62px)', lineHeight: 'clamp(47px, 7vw, 80px)', fontWeight: 'bold' }}>
+              <span className="text-[#00da6b]">{t('mission.makeYourBrand')}</span>
+            </p>
+            <p className="mb-0" style={{ fontSize: 'clamp(37px, 6vw, 62px)', lineHeight: 'clamp(47px, 7vw, 80px)', fontWeight: 'bold' }}>
+              <span className="text-[#00da6b]">{t('mission.grow')}</span>
+            </p>
+          </>
+        )}
       </motion.div>
     </div>
   );

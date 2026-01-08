@@ -1,8 +1,10 @@
 'use client';
 import React, { useState } from 'react';
 import svgPaths from '../imports/svg-uw6loka219';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Contact() {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -27,7 +29,7 @@ export default function Contact() {
           <div className="grid grid-cols-2 gap-4 md:flex md:flex-col md:gap-[75px] items-start shrink-0 w-full lg:w-[340px]">
             {/* Title */}
             <h2 className="text-black col-span-1 self-end" style={{ fontSize: 'clamp(28px, 5vw, 65px)', fontWeight: 'bold', lineHeight: 'normal', maxWidth: '100%' }}>
-              Wanna work together?
+              {t('contact.title')}
             </h2>
             
             {/* 3D Illustration */}
@@ -119,66 +121,66 @@ export default function Contact() {
               <div className="gap-[24px] md:gap-[34px] grid grid-cols-1 md:grid-cols-2 mb-8 md:mb-12">
                 {/* Name */}
                 <div className="flex flex-col gap-[40px] items-start relative">
-                  <p className="font-bold leading-normal text-[22px] text-black">Name*</p>
+                  <p className="font-bold leading-normal text-[22px] text-black">{t('contact.form.name')}*</p>
                   <div className="bg-[#1E1E1F] h-px w-full" />
                   <input
                     type="text"
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    placeholder="Pedro Leyva"
+                    placeholder={t('contact.form.namePlaceholder')}
                     className="absolute top-[44px] left-0 font-normal text-[#717171] text-[16px] bg-transparent border-none outline-none w-full"
                   />
                 </div>
 
                 {/* Email */}
                 <div className="flex flex-col gap-[40px] items-start relative">
-                  <p className="font-bold leading-normal text-[22px] text-black">Email*</p>
+                  <p className="font-bold leading-normal text-[22px] text-black">{t('contact.form.email')}*</p>
                   <div className="bg-[#1E1E1F] h-px w-full" />
                   <input
                     type="email"
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    placeholder="pedro@mail.com"
+                    placeholder={t('contact.form.emailPlaceholder')}
                     className="absolute top-[44px] left-0 font-normal text-[#717171] text-[16px] bg-transparent border-none outline-none w-full"
                   />
                 </div>
 
                 {/* Phone */}
                 <div className="flex flex-col gap-[40px] items-start relative">
-                  <p className="font-bold leading-normal text-[22px] text-black">Phone</p>
+                  <p className="font-bold leading-normal text-[22px] text-black">{t('contact.form.phone')}</p>
                   <div className="bg-[#1E1E1F] h-px w-full" />
                   <input
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="+01 55 0000 0000"
+                    placeholder={t('contact.form.phonePlaceholder')}
                     className="absolute top-[44px] left-0 font-normal text-[#717171] text-[16px] bg-transparent border-none outline-none w-full"
                   />
                 </div>
 
                 {/* Company */}
                 <div className="flex flex-col gap-[40px] items-start relative">
-                  <p className="font-bold leading-normal text-[22px] text-black">Company</p>
+                  <p className="font-bold leading-normal text-[22px] text-black">{t('contact.form.company')}</p>
                   <div className="bg-[#1E1E1F] h-px w-full" />
                   <input
                     type="text"
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                    placeholder="Website or company name"
+                    placeholder={t('contact.form.companyPlaceholder')}
                     className="absolute top-[44px] left-0 font-normal text-[#717171] text-[16px] bg-transparent border-none outline-none w-full"
                   />
                 </div>
 
                 {/* Comments - Full width */}
                 <div className="md:col-span-2 flex flex-col gap-[40px] items-start relative">
-                  <p className="font-bold leading-normal text-[22px] text-black">Comments</p>
+                  <p className="font-bold leading-normal text-[22px] text-black">{t('contact.form.comments')}</p>
                   <div className="bg-[#1E1E1F] h-px w-full" />
                   <textarea
                     value={formData.comments}
                     onChange={(e) => setFormData({ ...formData, comments: e.target.value })}
-                    placeholder="Pitch your project idea"
+                    placeholder={t('contact.form.commentsPlaceholder')}
                     className="absolute top-[44px] left-0 font-normal text-[#717171] text-[16px] bg-transparent border-none outline-none w-full resize-none"
                     rows={1}
                   />
@@ -192,18 +194,18 @@ export default function Contact() {
 
                 {/* Services you need */}
                 <div className="flex flex-col gap-[40px] items-start relative">
-                  <p className="font-bold leading-normal text-[22px] text-black">Services you need</p>
+                  <p className="font-bold leading-normal text-[22px] text-black">{t('contact.form.servicesNeeded')}</p>
                   <div className="bg-[#1E1E1F] h-px w-full" />
                   <select
                     value={formData.services}
                     onChange={(e) => setFormData({ ...formData, services: e.target.value })}
                     className="absolute top-[44px] left-0 font-normal text-[#717171] text-[16px] bg-transparent border-none outline-none w-full appearance-none cursor-pointer"
                   >
-                    <option value="">Select services</option>
-                    <option value="web">Web Development</option>
-                    <option value="app">App Development</option>
-                    <option value="design">Design</option>
-                    <option value="marketing">Marketing</option>
+                    <option value="">{t('contact.form.selectServices')}</option>
+                    <option value="web">{t('contact.form.services.web')}</option>
+                    <option value="app">{t('contact.form.services.app')}</option>
+                    <option value="design">{t('contact.form.services.design')}</option>
+                    <option value="marketing">{t('contact.form.services.marketing')}</option>
                   </select>
                   {/* Dropdown arrow */}
                   <div className="absolute right-[19px] top-[49px] h-[13.875px] w-[9.289px] pointer-events-none">
@@ -215,18 +217,18 @@ export default function Contact() {
 
                 {/* Budget */}
                 <div className="flex flex-col gap-[40px] items-start relative">
-                  <p className="font-bold leading-normal text-[22px] text-black">Budget</p>
+                  <p className="font-bold leading-normal text-[22px] text-black">{t('contact.form.budget')}</p>
                   <div className="bg-[#1E1E1F] h-px w-full" />
                   <select
                     value={formData.budget}
                     onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                     className="absolute top-[44px] left-0 font-normal text-[#717171] text-[16px] bg-transparent border-none outline-none w-full appearance-none cursor-pointer"
                   >
-                    <option value="">Select services</option>
-                    <option value="5k-10k">$5k - $10k</option>
-                    <option value="10k-25k">$10k - $25k</option>
-                    <option value="25k-50k">$25k - $50k</option>
-                    <option value="50k+">$50k+</option>
+                    <option value="">{t('contact.form.selectBudget')}</option>
+                    <option value="5k-10k">{t('contact.form.budgetRanges.5k-10k')}</option>
+                    <option value="10k-25k">{t('contact.form.budgetRanges.10k-25k')}</option>
+                    <option value="25k-50k">{t('contact.form.budgetRanges.25k-50k')}</option>
+                    <option value="50k+">{t('contact.form.budgetRanges.50k+')}</option>
                   </select>
                   {/* Dropdown arrow */}
                   <div className="absolute right-[19px] top-[49px] h-[13.875px] w-[9.289px] pointer-events-none">
@@ -243,7 +245,7 @@ export default function Contact() {
                   type="submit"
                   className="bg-[#00DA6B] box-border flex gap-[10px] items-center justify-center px-[25px] py-[16px] rounded-[5px] hover:bg-[#00C060] transition-colors"
                 >
-                  <p className="font-bold leading-normal text-[18px] text-white uppercase">Submit</p>
+                  <p className="font-bold leading-normal text-[18px] text-white uppercase">{t('contact.form.submit')}</p>
                 </button>
               </div>
             </form>
@@ -253,7 +255,7 @@ export default function Contact() {
         {/* Bottom text with arrow */}
         <div className="flex gap-[10px] md:gap-[15px] items-center justify-center mt-8 md:mt-12 lg:mt-16 flex-wrap">
           <p className="font-normal leading-[35px] text-[#1E1E1F] text-[18px] md:text-[25px] text-center">
-            Let's talk about your project...
+            {t('contact.bottomText')}
           </p>
           <div className="flex items-center justify-center leading-[0] rotate-180 scale-y-[-100%]">
             <svg width="54" height="25" viewBox="0 0 54 25" fill="none" xmlns="http://www.w3.org/2000/svg">
