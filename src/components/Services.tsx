@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import Web from '../imports/Web';
@@ -7,6 +9,10 @@ import Design from '../imports/Design';
 import Marketing from '../imports/Marketing';
 
 export default function Services() {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const serviceRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const rafIds = useRef<number[]>([]);
+
   const services = [
     {
       title: 'Web',
@@ -29,6 +35,40 @@ export default function Services() {
       href: '/services/marketing'
     }
   ];
+
+  const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>, index: number) => {
+    // Cancelar animación anterior si existe
+    if (rafIds.current[index]) {
+      cancelAnimationFrame(rafIds.current[index]);
+    }
+
+    rafIds.current[index] = requestAnimationFrame(() => {
+      const rect = serviceRefs.current[index]?.getBoundingClientRect();
+      const imageElement = serviceRefs.current[index]?.querySelector('.service-image') as HTMLElement;
+      
+      if (rect && imageElement) {
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        
+        const translateX = x * 0.1;
+        const translateY = y * 0.1;
+        
+        imageElement.style.transform = `translate3d(${translateX}px, ${translateY}px, 0)`;
+      }
+    });
+  }, []);
+
+  const handleMouseLeave = useCallback((index: number) => {
+    if (rafIds.current[index]) {
+      cancelAnimationFrame(rafIds.current[index]);
+    }
+    
+    const imageElement = serviceRefs.current[index]?.querySelector('.service-image') as HTMLElement;
+    if (imageElement) {
+      imageElement.style.transform = 'translate3d(0, 0, 0)';
+    }
+    setHoveredIndex(null);
+  }, []);
 
   return (
     <section className="relative bg-[#1E1E1F] overflow-hidden">
@@ -55,11 +95,29 @@ export default function Services() {
             <Link
               key={index}
               href={service.href}
-              className="flex flex-col items-center text-center group cursor-pointer will-change-transform transition-transform duration-100 ease-out hover:scale-105"
+              className="flex flex-col items-center text-center group cursor-pointer"
             >
-              {/* SVG Illustration - Figma imported components */}
-              <div className="relative w-[306px] h-[400px] mx-auto will-change-transform transition-transform duration-100 ease-out group-hover:-translate-y-2">
-                {service.component}
+              <div
+                ref={(el) => { serviceRefs.current[index] = el; }}
+                className="relative w-[306px] h-[400px] mx-auto"
+                onMouseMove={(e) => handleMouseMove(e, index)}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => handleMouseLeave(index)}
+              >
+                {/* SVG Illustration - Figma imported components */}
+                <div
+                  className="service-image absolute inset-0"
+                  style={{ 
+                    willChange: 'transform',
+                    transform: 'translate3d(0, 0, 0)',
+                    backfaceVisibility: 'hidden',
+                    WebkitBackfaceVisibility: 'hidden',
+                    perspective: 1000,
+                    WebkitPerspective: 1000
+                  }}
+                >
+                  {service.component}
+                </div>
               </div>
 
               {/* Subtle shadow effect */}
