@@ -2,9 +2,10 @@
 import React, { useState } from 'react';
 import svgPaths from '../imports/svg-uw6loka219';
 import { useLanguage } from '../context/LanguageContext';
+import toast from 'react-hot-toast';
 
 export default function Contact() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -14,10 +15,68 @@ export default function Contact() {
     services: '',
     budget: ''
   });
+  
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
+
+    // Toast de loading
+    const loadingToast = toast.loading(
+      language === 'es' ? 'Enviando mensaje...' : 'Sending message...'
+    );
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        // Remover loading y mostrar success
+        toast.success(
+          language === 'es' 
+            ? '¡Mensaje enviado exitosamente! Te contactaremos pronto.' 
+            : 'Message sent successfully! We\'ll contact you soon.',
+          { id: loadingToast, duration: 5000 }
+        );
+        
+        // Limpiar formulario
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          company: '',
+          comments: '',
+          services: '',
+          budget: ''
+        });
+      } else {
+        // Remover loading y mostrar error
+        toast.error(
+          data.error || (language === 'es' 
+            ? 'Error al enviar el mensaje. Por favor intenta de nuevo.' 
+            : 'Error sending message. Please try again.'),
+          { id: loadingToast, duration: 5000 }
+        );
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      toast.error(
+        language === 'es' 
+          ? 'Error al enviar el mensaje. Por favor intenta de nuevo.' 
+          : 'Error sending message. Please try again.',
+        { id: loadingToast, duration: 5000 }
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -243,9 +302,19 @@ export default function Contact() {
               <div className="flex justify-end">
                 <button
                   type="submit"
-                  className="bg-[#00DA6B] box-border flex gap-[10px] items-center justify-center px-[25px] py-[16px] rounded-[5px] hover:bg-[#00C060] transition-colors"
+                  disabled={isSubmitting}
+                  className={`box-border flex gap-[10px] items-center justify-center px-[25px] py-[16px] rounded-[5px] transition-all ${
+                    isSubmitting 
+                      ? 'bg-gray-400 cursor-not-allowed' 
+                      : 'bg-[#00DA6B] hover:bg-[#00C060]'
+                  }`}
                 >
-                  <p className="font-bold leading-normal text-[18px] text-white uppercase">{t('contact.form.submit')}</p>
+                  <p className="font-bold leading-normal text-[18px] text-white uppercase">
+                    {isSubmitting 
+                      ? t('contact.form.sending') 
+                      : t('contact.form.submit')
+                    }
+                  </p>
                 </button>
               </div>
             </form>

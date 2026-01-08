@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import CustomCursor from "@/components/CustomCursor";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { Toaster } from 'react-hot-toast';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,31 @@ export default function RootLayout({
         <LanguageProvider>
           <CustomCursor />
           {children}
+          <Toaster 
+            position="top-right"
+            toastOptions={{
+              duration: 4000,
+              style: {
+                background: '#2B2B2C',
+                color: '#fff',
+                padding: '16px',
+                borderRadius: '8px',
+                fontSize: '14px',
+              },
+              success: {
+                iconTheme: {
+                  primary: '#00DA6B',
+                  secondary: '#fff',
+                },
+              },
+              error: {
+                iconTheme: {
+                  primary: '#ff4444',
+                  secondary: '#fff',
+                },
+              },
+            }}
+          />
         </LanguageProvider>
       </body>
     </html>
