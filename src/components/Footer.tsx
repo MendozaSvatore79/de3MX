@@ -378,7 +378,7 @@ export default function Footer() {
           {/* Middle section - Button, Logo, Social */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-60 w-full">
             {/* Wanna work together button */}
-            <button className="box-border flex items-center justify-center px-[20px] md:px-[25px] py-[14px] md:py-[16px] rounded-[125px] border border-white hover:bg-white hover:text-[#1E1E1F] transition-colors">
+            <button className="box-border flex items-center justify-center px-[20px] md:px-[25px] py-[14px] md:py-[16px] rounded-[125px] border border-white hover:bg-[#00DA6B] hover:border-[#00DA6B] transition-colors">
               <p className="font-bold text-[16px] md:text-[20px] text-white whitespace-nowrap">{t('footer.wannaWork')}</p>
             </button>
 
