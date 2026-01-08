@@ -1,17 +1,173 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useEffect } from 'react';
 import { Star } from 'lucide-react';
 
+interface Review {
+  id: number;
+  documentId: string;
+  name: string;
+  company: string;
+  text: string;
+  rating: number;
+  order: number;
+  avatar?: {
+    id?: number;
+    url?: string;
+    name?: string;
+  }
+}
+
 export default function Reviews() {
-  const reviews = [
-    {
-      name: 'Alfredo Lomantza',
-      company: 'Gruppo Lomantza Company',
-      rating: 5,
-      text: 'Working with this team was an amazing experience. They delivered exactly what we needed and more.',
-      date: '3 hours ago',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop'
+  const [reviews, setReviews] = useState<Review[]>([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+
+  const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL || 'https://prueba-sitede3mx.synovasystems.com';
+  const STRAPI_TOKEN = process.env.NEXT_PUBLIC_STRAPI_TOKEN;
+
+  useEffect(() => {
+    fetchReviews();
+  }, []);
+
+  const fetchReviews = async () => {
+    try {
+      const headers: HeadersInit = {
+        'Content-Type': 'application/json',
+      };
+
+      // Agregar token si existe
+      if (STRAPI_TOKEN) {
+        headers['Authorization'] = `Bearer ${STRAPI_TOKEN}`;
+      }
+
+      const response = await fetch(`${STRAPI_URL}/api/reviews?populate=*&sort=order:asc`, {
+        headers
+      });
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      
+      console.log('✅ Datos recibidos de Strapi:', data);
+      console.log('📊 Reviews encontrados:', data.data?.length || 0);
+      
+      if (data.data && data.data.length > 0) {
+        console.log('🎯 Primer review:', data.data[0]);
+        setReviews(data.data);
+        setError(false);
+      } else {
+        // Si no hay datos en la API, usar mock
+        throw new Error('No reviews found');
+      }
+      
+      setLoading(false);
+    } catch (error) {
+      console.error('Error fetching reviews:', error);
+      console.log('Usando datos de ejemplo...');
+      
+      // Fallback: datos de ejemplo mientras configuras Strapi
+      const mockReviews: Review[] = [
+        {
+          id: 1,
+          documentId: 'mock-1',
+          name: 'Alfredo Lomantza',
+          company: 'Gruppo Lomantza Company',
+          text: 'Working with this team was an amazing experience. They delivered exactly what we needed and more.',
+          rating: 5,
+          order: 1
+        },
+        {
+          id: 2,
+          documentId: 'mock-2',
+          name: 'María González',
+          company: 'Tech Solutions Inc',
+          text: 'Exceptional service and attention to detail. They transformed our digital presence completely.',
+          rating: 5,
+          order: 2
+        },
+        {
+          id: 3,
+          documentId: 'mock-3',
+          name: 'Carlos Ruiz',
+          company: 'Innovation Labs',
+          text: 'Professional, creative, and always on time. Highly recommended for any digital project.',
+          rating: 5,
+          order: 3
+        }
+      ];
+      
+      setReviews(mockReviews);
+      setError(true);
+      setLoading(false);
     }
-  ];
+  };
+
+  const handlePrevious = () => {
+    setCurrentIndex((prev) => (prev === 0 ? reviews.length - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev === reviews.length - 1 ? 0 : prev + 1));
+  };
+
+  const goToReview = (index: number) => {
+    setCurrentIndex(index);
+  };
+
+  if (loading) {
+    return (
+      <section className="relative bg-[#F8F8F8]">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-[24px] md:py-[36px] lg:py-[48px]">
+          <div className="flex items-center justify-center h-[400px]">
+            <p className="text-gray-500">Cargando reviews...</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  if (reviews.length === 0 || !reviews[currentIndex]) {
+    return (
+      <section className="relative bg-[#F8F8F8]">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-[24px] md:py-[36px] lg:py-[48px]">
+          <div className="flex flex-col items-center justify-center h-[400px] gap-4">
+            <p className="text-gray-500 text-lg">
+              {error ? 'Usando datos de ejemplo (Strapi no conectado)' : 'No hay reviews disponibles'}
+            </p>
+            {error && (
+              <p className="text-gray-400 text-sm">
+                Revisa la consola del navegador para más detalles
+              </p>
+            )}
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  const currentReview = reviews[currentIndex];
+  
+  // Validación adicional
+  if (!currentReview.name) {
+    console.error('Review sin name:', currentReview);
+    return (
+      <section className="relative bg-[#F8F8F8]">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-[24px] md:py-[36px] lg:py-[48px]">
+          <div className="flex items-center justify-center h-[400px]">
+            <p className="text-gray-500">Error en estructura de datos</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  const avatarUrl = currentReview.avatar?.url 
+    ? `${STRAPI_URL}${currentReview.avatar.url}`
+    : 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop';
 
   return (
     <section className="relative bg-[#F8F8F8]">
@@ -51,8 +207,8 @@ export default function Reviews() {
                   {/* Photo */}
                   <div className="w-[50px] h-[50px] rounded-full overflow-hidden bg-gray-300 shrink-0">
                     <img 
-                      src={reviews[0].image || "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop"} 
-                      alt={reviews[0].name}
+                      src={avatarUrl} 
+                      alt={currentReview.name}
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -60,10 +216,10 @@ export default function Reviews() {
                   {/* Name and company */}
                   <div className="flex flex-col items-start w-[270px]">
                     <p className="font-normal text-[#1E1E1F] text-[16px] leading-[23px]">
-                      {reviews[0].name}
+                      {currentReview.name}
                     </p>
                     <p className="font-bold text-[#1E1E1F] text-[16px] leading-[23px] whitespace-nowrap">
-                      | {reviews[0].company}
+                      | {currentReview.company}
                     </p>
                   </div>
                 </div>
@@ -82,23 +238,32 @@ export default function Reviews() {
               {/* Review text */}
               <div className="w-full">
                 <p className="font-normal text-[#1E1E1F] text-[16px] leading-[23px] max-w-[500px]">
-                  {reviews[0].text}
+                  {currentReview.text}
                 </p>
               </div>
             </div>
 
             {/* Indicators */}
             <div className="flex gap-[30px] md:gap-[43px] items-center justify-center h-[15px]">
-              <div className="w-[15px] h-[15px] rounded-full bg-[#1E1E1F]"></div>
-              <div className="w-[15px] h-[15px] rounded-full bg-[#CBCBCB]"></div>
-              <div className="w-[15px] h-[15px] rounded-full bg-[#CBCBCB]"></div>
-              <div className="w-[15px] h-[15px] rounded-full bg-[#CBCBCB]"></div>
-              <div className="w-[15px] h-[15px] rounded-full bg-[#CBCBCB]"></div>
+              {reviews.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToReview(index)}
+                  className={`w-[15px] h-[15px] rounded-full transition-colors ${
+                    index === currentIndex ? 'bg-[#1E1E1F]' : 'bg-[#CBCBCB] hover:bg-[#A0A0A0]'
+                  }`}
+                  aria-label={`Ver review ${index + 1}`}
+                ></button>
+              ))}
             </div>
 
             {/* Navigation arrows */}
             {/* Left arrow */}
-            <button className="hidden lg:block absolute left-0 top-[375px] w-[78.571px] h-[36.667px] hover:opacity-80 transition-opacity">
+            <button 
+              onClick={handlePrevious}
+              className="hidden lg:block absolute left-0 top-[375px] w-[78.571px] h-[36.667px] hover:opacity-80 transition-opacity"
+              aria-label="Review anterior"
+            >
               <svg width="79" height="37" viewBox="0 0 79 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 {/* Arrow shaft */}
                 <line x1="78.5714" y1="18.3333" x2="18.3333" y2="18.3333" stroke="#00DA6B" strokeWidth="3"/>
@@ -114,7 +279,11 @@ export default function Reviews() {
             </button>
             
             {/* Right arrow */}
-            <button className="hidden lg:block absolute right-0 top-[375px] w-[78.571px] h-[36.667px] hover:opacity-80 transition-opacity">
+            <button 
+              onClick={handleNext}
+              className="hidden lg:block absolute right-0 top-[375px] w-[78.571px] h-[36.667px] hover:opacity-80 transition-opacity"
+              aria-label="Review siguiente"
+            >
               <svg width="79" height="37" viewBox="0 0 79 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 {/* Arrow shaft */}
                 <line x1="0" y1="18.3333" x2="60.2381" y2="18.3333" stroke="#00DA6B" strokeWidth="3"/>
