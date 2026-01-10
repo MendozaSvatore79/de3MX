@@ -10,7 +10,7 @@ export default function WebServicePage() {
     <div className="min-h-screen bg-[#181818] flex flex-col">
       <Header />
       <main className="flex-1 w-full max-w-[1440px] mx-auto px-4 lg:px-12 pt-12">
-        {/* Barra de filtros centrada — contenedor tipo pill con opción activa */}
+        {/* Barra de filtros centrada — contenedordddddd tipo pill con opción activa */}
         <div className="relative mb-8 mt-10 md:mt-12">
           <ServiceSwitch />
         </div>
