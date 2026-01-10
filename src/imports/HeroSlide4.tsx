@@ -790,7 +790,7 @@ function Group41() {
 
 function Digital() {
   return (
-    <div className="absolute h-[402px] left-1/2 overflow-clip top-[calc(50%-0.5px)] translate-x-[-50%] translate-y-[-50%] w-[766px]" data-name="Digital">
+    <div className="absolute left-1/2 overflow-clip top-[calc(50%-0.5px)] translate-x-[-50%] translate-y-[-50%] w-[95vw] sm:w-[90vw] md:w-[766px] h-[300px] sm:h-[350px] md:h-[402px]" data-name="Digital">
       <Group41 />
     </div>
   );
@@ -798,7 +798,7 @@ function Digital() {
 
 function Hero() {
   return (
-    <div className="absolute h-[675px] left-1/2 overflow-clip top-0 translate-x-[-50%] w-[1440px]" data-name="Hero">
+    <div className="absolute left-1/2 overflow-clip top-0 translate-x-[-50%] w-full h-[600px] sm:h-[700px] md:h-[750px] lg:h-[850px] max-w-[1440px]" data-name="Hero">
       <Digital />
     </div>
   );

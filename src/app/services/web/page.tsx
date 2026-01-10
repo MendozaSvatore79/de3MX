@@ -1,10 +1,13 @@
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import Link from 'next/link';
+import Footer from '@/components/Footer';
+import PortfolioGrid from './PortfolioGrid';
+import { portfolioProjects } from './portfolioProjects';
+import ContactSection from './ContactSection';
 
 export default function WebServicePage() {
   return (
-    <div className="min-h-screen bg-[#1E1E1F]">
+    <div className="min-h-screen bg-[#181818] flex flex-col">
       <Header />
       
       <main className="pt-24 pb-20">
@@ -45,8 +48,24 @@ export default function WebServicePage() {
             </Link>
           </div>
         </div>
+        
+        {/* Encabezado WEB alineado a la izquierda con flecha hacia abajo y separador */}
+        <div className="flex items-baseline gap-4 mb-8">
+          <h1 className="text-white text-7xl md:text-8xl font-extrabold tracking-tight leading-tight flex items-center gap-4 pl-6">
+            WEB
+            <span className="inline-block align-middle">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="18" fill="#00DA6B"/><path d="M18 12v12M18 24l-4-4m4 4l4-4" stroke="#181818" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            </span>
+          </h1>
+          <span className=" hidden md:flex md:pl-[600px] items-center text-[#ffff] text-sm md:text-base tracking-wide gap-2 ml-8" style={{textShadow: '0 1px 0 rgba(255,255,255,0.12)'}}><span className="hidden md:inline">&lt;/&gt;</span> Building better solutions for your users.</span>
+        </div>
+        <div className="flex gap-4 mb-8 items-center">
+          <div className="flex-1 border-t border-[#fff] mt-4" style={{boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.06)'}} />
+          <div className="flex-1 border-t border-[#fff] mt-4" style={{boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.06)'}} />
+        </div>
+        <PortfolioGrid projects={portfolioProjects} />
+        <ContactSection />
       </main>
-
       <Footer />
     </div>
   );

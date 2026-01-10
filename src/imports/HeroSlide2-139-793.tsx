@@ -1562,7 +1562,7 @@ function Group106() {
 
 function Design() {
   return (
-    <div className="absolute h-[342.88px] left-[calc(50%-0.21px)] overflow-clip top-[calc(50%-0.06px)] translate-x-[-50%] translate-y-[-50%] w-[765.588px]" data-name="Design">
+    <div className="absolute left-[calc(50%-0.21px)] overflow-clip top-[calc(50%-0.06px)] translate-x-[-50%] translate-y-[-50%] w-[95vw] sm:w-[90vw] md:w-[765.588px] h-[260px] sm:w-[300px] md:h-[342.88px]" data-name="Design">
       <div className="absolute flex inset-[93.82%_69.03%_-0.01%_17.54%] items-center justify-center">
         <div className="flex-none h-[21.206px] scale-y-[-100%] w-[102.771px]">
           <div className="bg-black blur-[17px] filter size-full" />
@@ -1652,7 +1652,7 @@ function Design() {
 
 function Hero() {
   return (
-    <div className="absolute h-[675px] left-1/2 overflow-clip top-0 translate-x-[-50%] w-[1440px]" data-name="Hero">
+    <div className="absolute left-1/2 overflow-clip top-0 translate-x-[-50%] w-full h-[600px] sm:h-[700px] md:h-[750px] lg:h-[850px] max-w-[1440px]" data-name="Hero">
       {/* <Indicadores /> */}
       <Design />
     </div>
