@@ -214,3 +214,1645 @@
 html {
   font-size: var(--font-size);
 }
+
+
+
+.webPortafolio {
+  	width: 100%;
+  	height: 3835px;
+  	position: relative;
+  	background-color: #1e1e1f;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 18px;
+  	color: #fff;
+  	font-family: Inter;
+}
+.webPortafolioChild {
+  	position: absolute;
+  	top: 2043px;
+  	left: 1259px;
+  	width: 500px;
+  	height: 375px;
+  	object-fit: cover;
+}
+.web {
+  	position: absolute;
+  	top: 218px;
+  	left: 161px;
+  	font-size: 130px;
+  	line-height: 120px;
+  	font-weight: 600;
+}
+.decocuit {
+  	position: absolute;
+  	top: 1900px;
+  	left: 1305px;
+  	font-size: 30px;
+  	line-height: 40px;
+}
+.venn {
+  	position: absolute;
+  	top: 832px;
+  	left: 1305px;
+  	font-size: 30px;
+  	line-height: 40px;
+}
+.mexbusa {
+  	position: absolute;
+  	top: 1900px;
+  	left: 207px;
+  	font-size: 30px;
+  	line-height: 40px;
+}
+.commerceSociety {
+  	position: absolute;
+  	top: 2438px;
+  	left: 207px;
+  	font-size: 30px;
+  	line-height: 40px;
+}
+.uniqLuxury {
+  	position: absolute;
+  	top: 1900px;
+  	left: 760px;
+  	font-size: 30px;
+  	line-height: 40px;
+}
+.div {
+  	position: absolute;
+  	top: 1915px;
+  	left: 1716px;
+  	line-height: 26px;
+  	text-align: right;
+}
+.web2 {
+  	position: absolute;
+  	top: 1955px;
+  	left: 1288px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.div2 {
+  	position: absolute;
+  	top: 847px;
+  	left: 1716px;
+  	line-height: 26px;
+  	text-align: right;
+}
+.div3 {
+  	position: absolute;
+  	top: 1905px;
+  	left: 618px;
+  	line-height: 26px;
+  	text-align: right;
+}
+.div4 {
+  	position: absolute;
+  	top: 1905px;
+  	left: 1171px;
+  	line-height: 26px;
+  	text-align: right;
+}
+.div5 {
+  	position: absolute;
+  	top: 2443px;
+  	left: 617px;
+  	line-height: 26px;
+  	text-align: right;
+}
+.web3 {
+  	position: absolute;
+  	top: 887px;
+  	left: 1288px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.design {
+  	position: absolute;
+  	top: 887px;
+  	left: 1382px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.web4 {
+  	position: absolute;
+  	top: 1955px;
+  	left: 743px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.web5 {
+  	position: absolute;
+  	top: 1955px;
+  	left: 190px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.web6 {
+  	position: absolute;
+  	top: 2493px;
+  	left: 190px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.uniq {
+  	position: absolute;
+  	top: 1505px;
+  	left: 714px;
+  	width: 500px;
+  	height: 375px;
+}
+.uniqChild {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 30px;
+  	background-color: #c9c9c9;
+  	width: 500px;
+  	height: 375px;
+}
+.uniq1Icon {
+  	position: absolute;
+  	top: 24px;
+  	left: 5px;
+  	width: 490px;
+  	height: 325px;
+  	object-fit: cover;
+}
+.webPortafolioItem {
+  	position: absolute;
+  	top: 1505px;
+  	left: 161px;
+  	border-radius: 30px;
+  	background-color: #b2aaa1;
+  	width: 500px;
+  	height: 375px;
+}
+.webPortadaMexbusa1Icon {
+  	position: absolute;
+  	top: 1507px;
+  	left: 206px;
+  	width: 410px;
+  	height: 373px;
+  	object-fit: cover;
+}
+.webPortafolioInner {
+  	position: absolute;
+  	top: 2043px;
+  	left: 161px;
+  	border-radius: 30px;
+  	background-color: #2b2b2c;
+  	width: 500px;
+  	height: 375px;
+}
+.rectangleDiv {
+  	position: absolute;
+  	top: 885px;
+  	left: 1260px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 90px;
+  	height: 30px;
+}
+.webPortafolioChild2 {
+  	position: absolute;
+  	top: 1953px;
+  	left: 715px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 90px;
+  	height: 30px;
+}
+.webPortafolioChild3 {
+  	position: absolute;
+  	top: 1953px;
+  	left: 1260px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 90px;
+  	height: 30px;
+}
+.webPortafolioChild4 {
+  	position: absolute;
+  	top: 885px;
+  	left: 1360px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 110px;
+  	height: 30px;
+}
+.webPortafolioChild5 {
+  	position: absolute;
+  	top: 1953px;
+  	left: 162px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 90px;
+  	height: 30px;
+}
+.webPortafolioChild6 {
+  	position: absolute;
+  	top: 2491px;
+  	left: 162px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 90px;
+  	height: 30px;
+}
+.irA {
+  	position: absolute;
+  	height: 0.91%;
+  	width: 1.82%;
+  	top: 49.67%;
+  	right: 60.94%;
+  	bottom: 49.41%;
+  	left: 37.24%;
+}
+.vectorIcon {
+  	position: absolute;
+  	height: 55.43%;
+  	width: 55.43%;
+  	top: 22.22%;
+  	right: 22.35%;
+  	bottom: 22.35%;
+  	left: 22.22%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: contain;
+}
+.irAChild {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 5px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 35px;
+  	height: 35px;
+}
+.irA2 {
+  	position: absolute;
+  	height: 0.91%;
+  	width: 1.82%;
+  	top: 49.67%;
+  	right: 32.55%;
+  	bottom: 49.41%;
+  	left: 65.63%;
+}
+.irA3 {
+  	position: absolute;
+  	height: 0.91%;
+  	width: 1.82%;
+  	top: 21.83%;
+  	right: 32.55%;
+  	bottom: 77.26%;
+  	left: 65.63%;
+}
+.irA4 {
+  	position: absolute;
+  	height: 0.91%;
+  	width: 1.82%;
+  	top: 49.67%;
+  	right: 89.74%;
+  	bottom: 49.41%;
+  	left: 8.44%;
+}
+.irA5 {
+  	position: absolute;
+  	height: 0.91%;
+  	width: 1.82%;
+  	top: 63.7%;
+  	right: 89.74%;
+  	bottom: 35.38%;
+  	left: 8.44%;
+}
+.layer1Icon {
+  	position: absolute;
+  	top: 243px;
+  	left: 485px;
+  	width: 70px;
+  	height: 70px;
+}
+.wannaWorkTogetherParent {
+  	position: absolute;
+  	top: 32px;
+  	left: 1493px;
+  	width: 260px;
+  	height: 55px;
+  	text-align: center;
+}
+.wannaWorkTogether {
+  	position: absolute;
+  	top: 16px;
+  	left: 30px;
+}
+.groupChild {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 125px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 260px;
+  	height: 55px;
+}
+.portfolioParent {
+  	position: absolute;
+  	top: 32px;
+  	left: 1319px;
+  	width: 150px;
+  	height: 55px;
+  	text-align: center;
+}
+.portfolio {
+  	position: absolute;
+  	top: 16px;
+  	left: 37px;
+}
+.groupItem {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 125px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 150px;
+  	height: 55px;
+}
+.esp {
+  	position: absolute;
+  	top: 37px;
+  	left: 1266px;
+  	font-size: 16px;
+  	line-height: 46px;
+  	text-align: center;
+}
+.groupIcon {
+  	position: absolute;
+  	top: 35px;
+  	left: 58px;
+  	width: 90px;
+  	height: 50px;
+}
+.rectangleParent {
+  	position: absolute;
+  	top: 32px;
+  	left: 1777px;
+  	width: 55px;
+  	height: 55px;
+}
+.groupInner {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 5px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 55px;
+  	height: 55px;
+}
+.groupChild2 {
+  	position: absolute;
+  	height: 41.27%;
+  	width: 61.82%;
+  	top: 29.09%;
+  	right: 18.18%;
+  	bottom: 29.64%;
+  	left: 20%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.abastero {
+  	position: absolute;
+  	top: 1366px;
+  	left: 755px;
+  	font-size: 30px;
+  	line-height: 40px;
+}
+.kiki {
+  	position: absolute;
+  	top: 2438px;
+  	left: 755px;
+  	font-size: 30px;
+  	line-height: 40px;
+}
+.div6 {
+  	position: absolute;
+  	top: 1371px;
+  	left: 1165px;
+  	line-height: 26px;
+  	text-align: right;
+}
+.div7 {
+  	position: absolute;
+  	top: 2443px;
+  	left: 1165px;
+  	line-height: 26px;
+  	text-align: right;
+}
+.abasteros {
+  	position: absolute;
+  	top: 971px;
+  	left: 710px;
+  	width: 500px;
+  	height: 375px;
+}
+.abasterosChild {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 30px;
+  	background-color: #7aa827;
+  	width: 500px;
+  	height: 375px;
+}
+.abasteros1Icon {
+  	position: absolute;
+  	top: 9px;
+  	left: 42px;
+  	width: 416px;
+  	height: 354px;
+  	object-fit: cover;
+}
+.kiki2 {
+  	position: absolute;
+  	top: 2043px;
+  	left: 710px;
+  	width: 500px;
+  	height: 375px;
+}
+.kikiChild {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 30px;
+  	background-color: #f5e948;
+  	width: 500px;
+  	height: 375px;
+}
+.kiki1Icon {
+  	position: absolute;
+  	top: 65px;
+  	left: 23px;
+  	width: 457px;
+  	height: 260px;
+  	object-fit: cover;
+}
+.irA6 {
+  	position: absolute;
+  	height: 0.91%;
+  	width: 1.82%;
+  	top: 35.75%;
+  	right: 60.99%;
+  	bottom: 63.34%;
+  	left: 37.19%;
+}
+.irA7 {
+  	position: absolute;
+  	height: 0.91%;
+  	width: 1.82%;
+  	top: 63.7%;
+  	right: 60.99%;
+  	bottom: 35.38%;
+  	left: 37.19%;
+}
+.prepaIbero {
+  	position: absolute;
+  	top: 830px;
+  	left: 206px;
+  	font-size: 30px;
+  	line-height: 40px;
+}
+.imemsa {
+  	position: absolute;
+  	top: 830px;
+  	left: 755px;
+  	font-size: 30px;
+  	line-height: 40px;
+}
+.div8 {
+  	position: absolute;
+  	top: 835px;
+  	left: 1166px;
+  	line-height: 26px;
+  	text-align: right;
+}
+.div9 {
+  	position: absolute;
+  	top: 835px;
+  	left: 616px;
+  	line-height: 26px;
+  	text-align: right;
+}
+.web7 {
+  	position: absolute;
+  	top: 885px;
+  	left: 189px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.portadaWebImemsaInicioweb1Icon {
+  	position: absolute;
+  	top: 437px;
+  	left: 710px;
+  	border-radius: 31px;
+  	width: 500px;
+  	height: 375px;
+  	object-fit: cover;
+}
+.webPortafolioChild7 {
+  	position: absolute;
+  	top: 883px;
+  	left: 161px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 90px;
+  	height: 30px;
+}
+.irA8 {
+  	position: absolute;
+  	height: 0.91%;
+  	width: 1.82%;
+  	top: 21.77%;
+  	right: 61.2%;
+  	bottom: 77.31%;
+  	left: 36.98%;
+}
+.irA9 {
+  	position: absolute;
+  	height: 0.91%;
+  	width: 1.82%;
+  	top: 21.77%;
+  	right: 89.79%;
+  	bottom: 77.31%;
+  	left: 8.39%;
+}
+.imagen2VennIcon {
+  	position: absolute;
+  	top: 437px;
+  	left: 1259px;
+  	border-radius: 30px;
+  	width: 500px;
+  	height: 375px;
+  	object-fit: cover;
+}
+.groupParent {
+  	position: absolute;
+  	top: 3014px;
+  	left: 0px;
+  	width: 1920px;
+  	height: 2px;
+}
+.rectangleGroup {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 818px;
+  	height: 2px;
+}
+.groupChild3 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #fff;
+  	width: 618px;
+  	height: 2px;
+  	opacity: 0.5;
+}
+.groupChild4 {
+  	position: absolute;
+  	top: 0px;
+  	left: 655px;
+  	background-color: #fff;
+  	width: 63px;
+  	height: 2px;
+  	opacity: 0.5;
+}
+.groupChild5 {
+  	position: absolute;
+  	top: 0px;
+  	left: 718px;
+  	background-color: #fff;
+  	width: 100px;
+  	height: 2px;
+  	opacity: 0.5;
+}
+.rectangleContainer {
+  	position: absolute;
+  	top: 0px;
+  	left: 1102px;
+  	width: 818px;
+  	height: 2px;
+}
+.letsTalkAbout {
+  	position: absolute;
+  	top: 3087px;
+  	left: 121px;
+  	font-size: 25px;
+  	line-height: 49px;
+}
+.page1Icon {
+  	position: absolute;
+  	height: 0.65%;
+  	width: 2.79%;
+  	top: 80.81%;
+  	right: 71.95%;
+  	bottom: 18.54%;
+  	left: 25.26%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: contain;
+}
+.wannaWorkTogether2 {
+  	position: absolute;
+  	top: 2696px;
+  	left: 121px;
+  	font-size: 65px;
+  	display: inline-block;
+  	width: 340px;
+  	height: 271px;
+}
+.webPortafolioChild8 {
+  	position: absolute;
+  	top: 2671px;
+  	left: 465px;
+  	width: 304px;
+  	height: 307px;
+}
+.webPortafolioChild9 {
+  	position: absolute;
+  	top: 119px;
+  	left: 660px;
+  	box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
+  	border-radius: 35px;
+  	background-color: #2b2b2c;
+  	width: 600px;
+  	height: 55px;
+}
+.app {
+  	position: absolute;
+  	top: 136px;
+  	left: 871px;
+  	line-height: 26px;
+  	font-family: 'Courier Prime';
+  	text-align: center;
+}
+.design2 {
+  	position: absolute;
+  	top: 136px;
+  	left: 998px;
+  	line-height: 26px;
+  	font-family: 'Courier Prime';
+  	text-align: center;
+}
+.marketing {
+  	position: absolute;
+  	top: 136px;
+  	left: 1126px;
+  	line-height: 26px;
+  	font-family: 'Courier Prime';
+  	text-align: center;
+}
+.buildingBetterSolutions {
+  	position: absolute;
+  	top: 279px;
+  	left: 1295px;
+  	font-size: 25px;
+  	line-height: 35px;
+}
+.webPortafolioChild10 {
+  	position: absolute;
+  	top: 124px;
+  	left: 665px;
+  	border-radius: 35px;
+  	background-color: #00da6b;
+  	width: 134px;
+  	height: 45px;
+}
+.web8 {
+  	position: absolute;
+  	top: 136px;
+  	left: 712px;
+  	line-height: 26px;
+  	font-family: 'Courier Prime';
+  	color: #1e1e1f;
+  	text-align: center;
+}
+.groupDiv {
+  	position: absolute;
+  	top: 373px;
+  	left: 0px;
+  	width: 1919px;
+  	height: 2px;
+}
+.groupContainer {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 1919px;
+  	height: 2px;
+}
+.rectangleWrapper {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 728px;
+  	height: 2px;
+}
+.groupChild9 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #fff;
+  	width: 728px;
+  	height: 2px;
+  	opacity: 0.5;
+}
+.rectangleFrame {
+  	position: absolute;
+  	top: 0px;
+  	left: 815px;
+  	width: 1104px;
+  	height: 2px;
+}
+.groupChild10 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #fff;
+  	width: 1104px;
+  	height: 2px;
+  	opacity: 0.5;
+}
+.webPortafolioChild11 {
+  	position: absolute;
+  	top: 285px;
+  	left: 1252px;
+  	width: 35px;
+  	height: 25px;
+}
+.rectangleParent2 {
+  	position: absolute;
+  	top: 3430px;
+  	left: 0px;
+  	width: 1920px;
+  	height: 405px;
+  	text-align: center;
+  	font-size: 14px;
+  	color: #d9d9d9;
+}
+.groupChild11 {
+  	position: absolute;
+  	top: 1px;
+  	left: 0px;
+  	background-color: #1e1e1f;
+  	width: 1920px;
+  	height: 404px;
+}
+.linkedinBusinessNetworkSociIcon {
+  	position: absolute;
+  	top: 61px;
+  	left: 1798px;
+  	width: 35px;
+  	height: 35px;
+}
+.instagramFillIcon {
+  	position: absolute;
+  	top: 61px;
+  	left: 1725px;
+  	width: 35px;
+  	height: 35px;
+}
+.facebookIcon {
+  	position: absolute;
+  	top: 61px;
+  	left: 1649px;
+  	width: 35px;
+  	height: 35px;
+}
+.wannaWorkTogetherGroup {
+  	position: absolute;
+  	top: 61px;
+  	left: 88px;
+  	width: 307px;
+  	height: 55px;
+  	font-size: 20px;
+  	color: #fff;
+}
+.wannaWorkTogether3 {
+  	position: absolute;
+  	top: 15px;
+  	left: 42px;
+}
+.groupChild12 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 125px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 307px;
+  	height: 55px;
+}
+.frameIcon {
+  	position: absolute;
+  	top: 61px;
+  	left: 892px;
+  	width: 137px;
+  	height: 123px;
+}
+.privacyPolicy {
+  	position: absolute;
+  	top: 344px;
+  	left: 669px;
+  	letter-spacing: 0.1em;
+  	line-height: 26px;
+  	text-transform: uppercase;
+  	font-weight: 300;
+}
+.legal {
+  	position: absolute;
+  	top: 344px;
+  	left: 1054px;
+  	letter-spacing: 0.1em;
+  	line-height: 26px;
+  	text-transform: uppercase;
+  	font-weight: 300;
+}
+.termsOfUse {
+  	position: absolute;
+  	top: 344px;
+  	left: 868px;
+  	letter-spacing: 0.1em;
+  	line-height: 26px;
+  	text-transform: uppercase;
+  	font-weight: 300;
+}
+.siteMap {
+  	position: absolute;
+  	top: 344px;
+  	left: 1177px;
+  	letter-spacing: 0.1em;
+  	line-height: 26px;
+  	text-transform: uppercase;
+  	font-weight: 300;
+}
+.groupChild13 {
+  	position: absolute;
+  	top: 347px;
+  	left: 833px;
+  	background-color: #d9d9d9;
+  	width: 1px;
+  	height: 20px;
+}
+.groupChild14 {
+  	position: absolute;
+  	top: 347px;
+  	left: 1137px;
+  	background-color: #d9d9d9;
+  	width: 1px;
+  	height: 20px;
+}
+.groupChild15 {
+  	position: absolute;
+  	top: 347px;
+  	left: 1019px;
+  	background-color: #d9d9d9;
+  	width: 1px;
+  	height: 20px;
+}
+.groupChild16 {
+  	position: absolute;
+  	top: 1px;
+  	left: 1920px;
+  	background-color: #494949;
+  	width: 1920px;
+  	height: 1px;
+  	transform:  rotate(180deg);
+  	transform-origin: 0 0;
+}
+.groupChild17 {
+  	position: absolute;
+  	top: 309px;
+  	left: 1920px;
+  	background-color: #494949;
+  	width: 1920px;
+  	height: 1px;
+  	transform:  rotate(180deg);
+  	transform-origin: 0 0;
+}
+.biogal {
+  	position: absolute;
+  	top: 1366px;
+  	left: 206px;
+  	font-size: 30px;
+  	line-height: 40px;
+}
+.div10 {
+  	position: absolute;
+  	top: 1371px;
+  	left: 616px;
+  	line-height: 26px;
+  	text-align: right;
+}
+.rectangleParent3 {
+  	position: absolute;
+  	top: 971px;
+  	left: 161px;
+  	width: 500px;
+  	height: 375px;
+}
+.groupChild18 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 30px;
+  	background-color: #046aa9;
+  	width: 500px;
+  	height: 375px;
+}
+.portadaBiogal1Icon {
+  	position: absolute;
+  	top: 2px;
+  	left: 37px;
+  	width: 426px;
+  	height: 372px;
+  	object-fit: cover;
+}
+.irA10 {
+  	position: absolute;
+  	height: 0.91%;
+  	width: 1.82%;
+  	top: 35.75%;
+  	right: 89.79%;
+  	bottom: 63.34%;
+  	left: 8.39%;
+}
+.opticsMxcol {
+  	position: absolute;
+  	top: 1366px;
+  	left: 1304px;
+  	font-size: 30px;
+  	line-height: 40px;
+}
+.voluntariosMxico {
+  	position: absolute;
+  	top: 2438px;
+  	left: 1304px;
+  	font-size: 30px;
+  	line-height: 40px;
+}
+.div11 {
+  	position: absolute;
+  	top: 1381px;
+  	left: 1715px;
+  	line-height: 26px;
+  	text-align: right;
+}
+.div12 {
+  	position: absolute;
+  	top: 2453px;
+  	left: 1715px;
+  	line-height: 26px;
+  	text-align: right;
+}
+.web9 {
+  	position: absolute;
+  	top: 1421px;
+  	left: 1287px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.web10 {
+  	position: absolute;
+  	top: 2493px;
+  	left: 1287px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.opticsMxcol2 {
+  	position: absolute;
+  	top: 971px;
+  	left: 1259px;
+  	width: 500px;
+  	height: 375px;
+}
+.opticsMxcolChild {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 30px;
+  	background-color: #3fcbd1;
+  	width: 500px;
+  	height: 375px;
+}
+.opticsMx1 {
+  	position: absolute;
+  	top: 23px;
+  	left: 8px;
+  	width: 487px;
+  	height: 335px;
+  	object-fit: cover;
+}
+.webPortafolioChild12 {
+  	position: absolute;
+  	top: 1419px;
+  	left: 1259px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 90px;
+  	height: 30px;
+}
+.webPortafolioChild13 {
+  	position: absolute;
+  	top: 2491px;
+  	left: 1259px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 90px;
+  	height: 30px;
+}
+.irA11 {
+  	position: absolute;
+  	height: 0.91%;
+  	width: 1.82%;
+  	top: 35.75%;
+  	right: 32.6%;
+  	bottom: 63.34%;
+  	left: 65.57%;
+}
+.irA12 {
+  	position: absolute;
+  	height: 0.91%;
+  	width: 1.82%;
+  	top: 63.7%;
+  	right: 32.6%;
+  	bottom: 35.38%;
+  	left: 65.57%;
+}
+.webPortafolioChild14 {
+  	position: absolute;
+  	top: 2657px;
+  	left: 807px;
+  	background-color: #f8f8f8;
+  	width: 954px;
+  	height: 637px;
+}
+.email {
+  	position: absolute;
+  	top: 2730px;
+  	left: 1304px;
+  	font-size: 22px;
+  	color: #000;
+}
+.company {
+  	position: absolute;
+  	top: 2831px;
+  	left: 1304px;
+  	font-size: 22px;
+  	color: #000;
+}
+.budget {
+  	position: absolute;
+  	top: 3043px;
+  	left: 1304px;
+  	font-size: 22px;
+  	color: #000;
+}
+.name {
+  	position: absolute;
+  	top: 2733px;
+  	left: 867px;
+  	font-size: 22px;
+  	color: #000;
+}
+.phone {
+  	position: absolute;
+  	top: 2834px;
+  	left: 867px;
+  	font-size: 22px;
+  	color: #000;
+}
+.webPortafolioChild15 {
+  	position: absolute;
+  	top: 3162px;
+  	left: 1420px;
+  	border-radius: 5px;
+  	background-color: #00da6b;
+  	width: 280px;
+  	height: 60px;
+}
+.websiteOrCompany {
+  	position: absolute;
+  	top: 2874px;
+  	left: 1304px;
+  	font-size: 16px;
+  	color: #717171;
+}
+.servicesYouNeed {
+  	position: absolute;
+  	top: 3046px;
+  	left: 867px;
+  	font-size: 22px;
+  	color: #000;
+}
+.comments {
+  	position: absolute;
+  	top: 2942px;
+  	left: 867px;
+  	font-size: 22px;
+  	color: #000;
+}
+.selectBudget {
+  	position: absolute;
+  	top: 3086px;
+  	left: 1304px;
+  	font-size: 16px;
+  	color: #717171;
+}
+.selectServices {
+  	position: absolute;
+  	top: 3086px;
+  	left: 867px;
+  	font-size: 16px;
+  	color: #717171;
+}
+.pitchYourProject {
+  	position: absolute;
+  	top: 2981px;
+  	left: 867px;
+  	font-size: 16px;
+  	color: #717171;
+}
+.webPortafolioChild16 {
+  	position: absolute;
+  	top: 2901px;
+  	left: 867px;
+  	background-color: #1e1e1f;
+  	width: 400px;
+  	height: 1px;
+}
+.webPortafolioChild17 {
+  	position: absolute;
+  	top: 2901px;
+  	left: 1301px;
+  	background-color: #1e1e1f;
+  	width: 400px;
+  	height: 1px;
+}
+.webPortafolioChild18 {
+  	position: absolute;
+  	top: 2800px;
+  	left: 867px;
+  	background-color: #1e1e1f;
+  	width: 400px;
+  	height: 1px;
+}
+.webPortafolioChild19 {
+  	position: absolute;
+  	top: 2800px;
+  	left: 1301px;
+  	background-color: #1e1e1f;
+  	width: 400px;
+  	height: 1px;
+}
+.submit {
+  	position: absolute;
+  	top: 3181px;
+  	left: 1525px;
+  	text-transform: uppercase;
+}
+.webPortafolioChild20 {
+  	position: absolute;
+  	top: 3113px;
+  	left: 867px;
+  	background-color: #1e1e1f;
+  	width: 400px;
+  	height: 1px;
+}
+.webPortafolioChild21 {
+  	position: absolute;
+  	top: 3113px;
+  	left: 1301px;
+  	background-color: #1e1e1f;
+  	width: 400px;
+  	height: 1px;
+}
+.webPortafolioChild22 {
+  	position: absolute;
+  	top: 3009px;
+  	left: 867px;
+  	background-color: #1e1e1f;
+  	width: 834px;
+  	height: 1px;
+}
+.webPortafolioChild23 {
+  	position: absolute;
+  	top: 2996px;
+  	left: 1686px;
+  	width: 15px;
+  	height: 13px;
+}
+.webPortafolioChild24 {
+  	position: absolute;
+  	height: 0.24%;
+  	width: 0.72%;
+  	top: 80.63%;
+  	right: 34.01%;
+  	bottom: 19.13%;
+  	left: 65.27%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: contain;
+}
+.webPortafolioChild25 {
+  	position: absolute;
+  	height: 0.24%;
+  	width: 0.72%;
+  	top: 80.63%;
+  	right: 11.4%;
+  	bottom: 19.13%;
+  	left: 87.87%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: contain;
+}
+.maskGroupIcon {
+  	position: absolute;
+  	top: 1505px;
+  	left: 1260px;
+  	width: 500px;
+  	height: 375px;
+  	object-fit: cover;
+}
+.uiUx2De3portfolioIcon {
+  	position: absolute;
+  	top: 2043px;
+  	left: 161px;
+  	border-radius: 30px;
+  	width: 500px;
+  	height: 375px;
+  	object-fit: cover;
+}
+.icon {
+  	position: absolute;
+  	top: 435px;
+  	left: 161px;
+  	border-radius: 30px;
+  	width: 500px;
+  	height: 375px;
+  	object-fit: cover;
+}
+.design4 {
+  	position: absolute;
+  	top: 1421px;
+  	left: 1382px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.design5 {
+  	position: absolute;
+  	top: 2493px;
+  	left: 1382px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.webPortafolioChild26 {
+  	position: absolute;
+  	top: 1419px;
+  	left: 1360px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 110px;
+  	height: 30px;
+}
+.webPortafolioChild27 {
+  	position: absolute;
+  	top: 2491px;
+  	left: 1360px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 110px;
+  	height: 30px;
+}
+.web11 {
+  	position: absolute;
+  	top: 887px;
+  	left: 738px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.design6 {
+  	position: absolute;
+  	top: 887px;
+  	left: 832px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.webPortafolioChild29 {
+  	position: absolute;
+  	top: 885px;
+  	left: 710px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 90px;
+  	height: 30px;
+}
+.webPortafolioChild30 {
+  	position: absolute;
+  	top: 885px;
+  	left: 810px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 110px;
+  	height: 30px;
+}
+.web12 {
+  	position: absolute;
+  	top: 1421px;
+  	left: 738px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.web13 {
+  	position: absolute;
+  	top: 2493px;
+  	left: 738px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.design8 {
+  	position: absolute;
+  	top: 1421px;
+  	left: 832px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.design9 {
+  	position: absolute;
+  	top: 2493px;
+  	left: 832px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.webPortafolioChild32 {
+  	position: absolute;
+  	top: 1419px;
+  	left: 710px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 90px;
+  	height: 30px;
+}
+.webPortafolioChild33 {
+  	position: absolute;
+  	top: 2491px;
+  	left: 710px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 90px;
+  	height: 30px;
+}
+.webPortafolioChild34 {
+  	position: absolute;
+  	top: 1419px;
+  	left: 810px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 110px;
+  	height: 30px;
+}
+.webPortafolioChild35 {
+  	position: absolute;
+  	top: 2491px;
+  	left: 810px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 110px;
+  	height: 30px;
+}
+.web14 {
+  	position: absolute;
+  	top: 1421px;
+  	left: 189px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.design12 {
+  	position: absolute;
+  	top: 1421px;
+  	left: 283px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.webPortafolioChild38 {
+  	position: absolute;
+  	top: 1419px;
+  	left: 161px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 90px;
+  	height: 30px;
+}
+.webPortafolioChild39 {
+  	position: absolute;
+  	top: 1419px;
+  	left: 261px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 110px;
+  	height: 30px;
+}
+.marketing2 {
+  	position: absolute;
+  	top: 2493px;
+  	left: 951px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.marketing3 {
+  	position: absolute;
+  	top: 1955px;
+  	left: 283px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.marketing4 {
+  	position: absolute;
+  	top: 1421px;
+  	left: 1502px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.marketing5 {
+  	position: absolute;
+  	top: 887px;
+  	left: 1501px;
+  	line-height: 26px;
+  	font-family: Courier;
+}
+.webPortafolioChild41 {
+  	position: absolute;
+  	top: 2491px;
+  	left: 930px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 140px;
+  	height: 30px;
+}
+.webPortafolioChild42 {
+  	position: absolute;
+  	top: 1953px;
+  	left: 262px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 140px;
+  	height: 30px;
+}
+.webPortafolioChild43 {
+  	position: absolute;
+  	top: 1419px;
+  	left: 1481px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 140px;
+  	height: 30px;
+}
+.webPortafolioChild44 {
+  	position: absolute;
+  	top: 885px;
+  	left: 1480px;
+  	border-radius: 50px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 140px;
+  	height: 30px;
+}
+.blockBlockedForbiddenUiIcoParent {
+  	position: absolute;
+  	top: 759px;
+  	left: 181px;
+  	border-radius: 5px;
+  	background-color: rgba(30, 30, 31, 0.65);
+  	height: 30px;
+  	overflow: hidden;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 6px 7px;
+  	box-sizing: border-box;
+  	gap: 5px;
+  	font-size: 12px;
+}
+.blockBlockedForbiddenUiIcoIcon {
+  	height: 24px;
+  	width: 24px;
+  	position: relative;
+  	flex-shrink: 0;
+}
+.sinMantenimientoActual {
+  	position: relative;
+  	line-height: 20px;
+  	flex-shrink: 0;
+}
+.blockBlockedForbiddenUiIcoGroup {
+  	position: absolute;
+  	top: 1824px;
+  	left: 181px;
+  	border-radius: 5px;
+  	background-color: rgba(30, 30, 31, 0.65);
+  	height: 30px;
+  	overflow: hidden;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 6px 7px;
+  	box-sizing: border-box;
+  	gap: 5px;
+  	font-size: 12px;
+}
+.blockBlockedForbiddenUiIcoContainer {
+  	position: absolute;
+  	top: 759px;
+  	left: 1279px;
+  	border-radius: 5px;
+  	background-color: rgba(30, 30, 31, 0.65);
+  	height: 30px;
+  	overflow: hidden;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 6px 7px;
+  	box-sizing: border-box;
+  	gap: 5px;
+  	font-size: 12px;
+}
+.frameDiv {
+  	position: absolute;
+  	top: 1824px;
+  	left: 1279px;
+  	border-radius: 5px;
+  	background-color: rgba(30, 30, 31, 0.65);
+  	height: 30px;
+  	overflow: hidden;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 6px 7px;
+  	box-sizing: border-box;
+  	gap: 5px;
+  	font-size: 12px;
+}
+.blockBlockedForbiddenUiIcoParent2 {
+  	position: absolute;
+  	top: 2368px;
+  	left: 1279px;
+  	border-radius: 5px;
+  	background-color: rgba(30, 30, 31, 0.65);
+  	height: 30px;
+  	overflow: hidden;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 6px 7px;
+  	box-sizing: border-box;
+  	gap: 5px;
+  	font-size: 12px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,600;0,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier:ital,wght@0,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400&display=swap');
+
+body {
+  	margin: 0; line-height: normal;
+}
+

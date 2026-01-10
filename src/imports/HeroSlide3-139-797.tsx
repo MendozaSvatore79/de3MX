@@ -958,7 +958,7 @@ function Group38() {
 
 function Design() {
   return (
-    <div className="absolute h-[372px] left-1/2 overflow-clip top-[calc(50%-0.5px)] translate-x-[-50%] translate-y-[-50%] w-[766px]" data-name="Design">
+    <div className="absolute left-1/2 overflow-clip top-[calc(50%-0.5px)] translate-x-[-50%] translate-y-[-50%] w-[95vw] sm:w-[90vw] md:w-[766px] h-[280px] sm:h-[320px] md:h-[372px]" data-name="Design">
       <Group38 />
     </div>
   );
@@ -966,7 +966,7 @@ function Design() {
 
 function Hero() {
   return (
-    <div className="absolute h-[675px] left-1/2 overflow-clip top-0 translate-x-[-50%] w-[1440px]" data-name="Hero">
+    <div className="absolute left-1/2 overflow-clip top-0 translate-x-[-50%] w-full h-[600px] sm:h-[700px] md:h-[750px] lg:h-[850px] max-w-[1440px]" data-name="Hero">
       {/* <Indicadores /> */}
       <Design />
     </div>

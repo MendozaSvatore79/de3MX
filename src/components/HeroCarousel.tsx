@@ -141,7 +141,7 @@ function MaskResplandor() {
 
 function Indicadores({ currentSlide, onClick }: { currentSlide: number; onClick: (index: number) => void }) {
   return (
-    <div className="absolute content-stretch flex flex-col gap-[16px] items-start left-[81px] top-[calc(50%-0.5px)] translate-y-[-50%] w-[36px] z-50" data-name="Indicadores">
+    <div className="absolute content-stretch flex flex-col gap-[16px] items-start left-[10px] md:left-[81px] top-[calc(50%-0.5px)] translate-y-[-50%] w-[36px] z-50" data-name="Indicadores">
       <button 
         onClick={() => onClick(0)}
         className={`shrink-0 w-full transition-all duration-300 ${currentSlide === 0 ? 'bg-[#00da6b] h-[10px]' : 'bg-white h-[3px]'}`} 
@@ -363,15 +363,11 @@ export default function HeroCarousel() {
           </AnimatePresence>
         </div>
 
-        {/* Social media - hidden on mobile, visible on desktop */}
-        <div className="hidden lg:block">
-          <Rrss />
-        </div>
+        {/* Social media - always visible */}
+        <Rrss />
 
-        {/* Indicators - hidden on mobile, visible on tablet+ */}
-        <div className="hidden md:block">
-          <Indicadores currentSlide={currentSlide} onClick={handleSlideChange} />
-        </div>
+        {/* Indicators - always visible */}
+        <Indicadores currentSlide={currentSlide} onClick={handleSlideChange} />
       </div>
       {/* Bottom cover to hide initial white gap below hero on large screens */}
       <div
