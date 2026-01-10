@@ -1,14 +1,15 @@
 import Header from '@/components/Header';
-import Link from 'next/link';
 import Footer from '@/components/Footer';
 import PortfolioGrid from './PortfolioGrid';
 import { portfolioProjects } from './portfolioProjects';
 import ContactSection from './ContactSection';
+import ServiceSwitch from './ServiceSwitch';
 
 export default function WebServicePage() {
   return (
     <div className="min-h-screen bg-[#181818] flex flex-col">
       <Header />
+<<<<<<< HEAD
       
       <main className="pt-24 pb-20">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
@@ -47,6 +48,12 @@ export default function WebServicePage() {
               Volver al inicio
             </Link>
           </div>
+=======
+      <main className="flex-1 w-full max-w-[1440px] mx-auto px-4 lg:px-12 pt-12">
+        {/* Barra de filtros centrada — contenedor tipo pill con opción activa */}
+        <div className="relative mb-8 mt-10 md:mt-12">
+          <ServiceSwitch />
+>>>>>>> 4426327 (cambios)
         </div>
         
         {/* Encabezado WEB alineado a la izquierda con flecha hacia abajo y separador */}
